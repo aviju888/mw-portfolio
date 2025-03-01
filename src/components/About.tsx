@@ -16,7 +16,7 @@ const About = () => {
   return (
     <section id="about" className="py-20 md:py-28 bg-white dark:bg-gray-900 relative">
       {/* Subtle corner accent */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--accent)] opacity-5 rounded-bl-full"></div>
+      <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--highlight)] opacity-5 rounded-bl-full"></div>
       
       <div className="container-custom">
         <motion.div 
@@ -81,7 +81,7 @@ const About = () => {
             
             {/* Card 2 */}
             <div className="card card-hover group">
-              <div className="mx-auto w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[var(--primary)] to-[var(--accent)] text-white rounded-xl mb-5 group-hover:scale-110 transition-transform duration-300">
+              <div className="mx-auto w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[var(--primary)] to-[var(--highlight)] text-white rounded-xl mb-5 group-hover:scale-110 transition-transform duration-300">
                 <FaDna size={24} />
               </div>
               <h3 className="font-semibold text-lg mb-2 text-center text-[var(--heading-color)]">Research</h3>
@@ -99,7 +99,7 @@ const About = () => {
             
             {/* Card 4 */}
             <div className="card card-hover group">
-              <div className="mx-auto w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[var(--secondary)] to-[var(--primary)] text-white rounded-xl mb-5 group-hover:scale-110 transition-transform duration-300">
+              <div className="mx-auto w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[var(--secondary)] to-[var(--accent)] text-white rounded-xl mb-5 group-hover:scale-110 transition-transform duration-300">
                 <FaChalkboardTeacher size={24} />
               </div>
               <h3 className="font-semibold text-lg mb-2 text-center text-[var(--heading-color)]">Teaching</h3>

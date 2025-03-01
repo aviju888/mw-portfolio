@@ -6,11 +6,11 @@ import { FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa';
 const Hero = () => {
   return (
     <section className="relative min-h-screen w-full overflow-hidden flex items-center">
-      {/* Sunset background - simplified gradient that covers viewport exactly */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#ff7e5f] via-[#feb47b] to-white dark:to-gray-900 z-0"></div>
+      {/* Green gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0D5B11] via-[#187C19] to-[#8DC71E] dark:to-gray-900 z-0"></div>
       
-      {/* Decorative elements - contained within viewport */}
-      <div className="absolute inset-0 bg-[url('/images/subtle-nature-pattern.svg')] bg-repeat opacity-5 z-0"></div>
+      {/* Decorative elements */}
+      <div className="absolute inset-0 bg-[url('/images/subtle-nature-pattern.svg')] bg-repeat opacity-10 z-0"></div>
       <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-white dark:from-gray-900 to-transparent z-0"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -63,7 +63,7 @@ const Hero = () => {
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-2xl shadow-xl border-4 border-white/30">
               {/* Replace with actual profile image */}
-              <div className="w-full h-full bg-gradient-to-br from-[var(--secondary)] to-[var(--primary)] flex items-center justify-center text-white text-6xl font-bold">
+              <div className="w-full h-full bg-gradient-to-br from-[var(--secondary)] to-[var(--highlight)] flex items-center justify-center text-white text-6xl font-bold">
                 <div className="relative z-10">MW</div>
               </div>
               {/* Uncomment when you have an image

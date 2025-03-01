@@ -10,7 +10,7 @@ A modern, responsive portfolio website template designed specifically for microb
 - **Optimized for Microbiology**: Sections specifically designed for research projects, lab skills, and publications
 - **SEO Friendly**: Built with best practices for search engine optimization
 - **Accessible**: Follows accessibility guidelines for all users
-- **UC Berkeley Theme**: Features the official UC Berkeley colors
+- **Nature-Inspired Green Theme**: Features a professional green color palette reflecting microbiology and plant sciences
 
 ## Sections
 
@@ -66,7 +66,7 @@ npm run dev
 1. **Personal Information**: Update your name, contact details, and social media links in various components.
 2. **Content**: Modify the content in each component to reflect your own experiences, projects, and skills.
 3. **Images**: Replace the placeholder images with your own photos in the `/public/images/` directory.
-4. **Colors**: Adjust the color scheme in `src/app/globals.css` if you prefer different colors.
+4. **Colors**: Adjust the color scheme in `src/app/globals.css` if you prefer different shades of green.
 
 ## Deployment
 
@@ -85,10 +85,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgements
 
-- UC Berkeley for the color scheme inspiration
+- The microbiology field for color palette inspiration
 - The Next.js team for the amazing framework
 - All the open-source libraries used in this project
 
 ---
 
-Designed with 💙💛 for UC Berkeley Microbiology majors
+Designed with 💚 for UC Berkeley Microbiology majors

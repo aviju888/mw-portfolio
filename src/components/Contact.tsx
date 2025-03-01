@@ -52,7 +52,7 @@ const Contact = () => {
       {/* Decorative background elements */}
       <div className="absolute top-0 right-0 w-full h-64 bg-gradient-to-b from-gray-50 to-transparent dark:from-gray-800 dark:to-transparent opacity-70"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[var(--primary)] opacity-5 rounded-full -translate-x-1/2 translate-y-1/3 blur-3xl"></div>
-      <div className="absolute top-40 right-0 w-72 h-72 bg-[var(--accent)] opacity-5 rounded-full translate-x-1/2 -translate-y-1/4 blur-2xl"></div>
+      <div className="absolute top-40 right-0 w-72 h-72 bg-[var(--highlight)] opacity-5 rounded-full translate-x-1/2 -translate-y-1/4 blur-2xl"></div>
       
       <div className="container-custom relative z-10">
         <motion.div 

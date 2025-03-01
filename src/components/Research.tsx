@@ -61,7 +61,7 @@ const Research = () => {
       ],
       image: "/images/research3.jpg",
       icon: <FaPalette size={20} />,
-      color: "from-[var(--accent)] to-[var(--secondary)]"
+      color: "from-[var(--highlight)] to-[var(--secondary)]"
     }
   ];
 
@@ -69,7 +69,7 @@ const Research = () => {
     <section id="research" className="py-20 md:py-28 bg-white dark:bg-gray-900 relative">
       {/* Decorative elements */}
       <div className="absolute bottom-0 right-0 w-full h-64 bg-gradient-to-t from-gray-50 to-transparent dark:from-gray-800 dark:to-transparent opacity-70"></div>
-      <div className="absolute top-1/3 left-0 w-48 h-48 bg-[var(--accent)] opacity-5 rounded-full"></div>
+      <div className="absolute top-1/3 left-0 w-48 h-48 bg-[var(--highlight)] opacity-5 rounded-full"></div>
       
       <div className="container-custom relative z-10">
         <motion.div 
@@ -156,7 +156,7 @@ const Research = () => {
                     <ul className="space-y-3 text-[var(--text-color)]">
                       {project.highlights.map((highlight, index) => (
                         <li key={index} className="flex items-start group">
-                          <span className="inline-block w-2 h-2 bg-gradient-to-br from-[var(--primary)] to-[var(--accent)] rounded-full mt-2 mr-3 flex-shrink-0 group-hover:scale-125 transition-transform"></span>
+                          <span className="inline-block w-2 h-2 bg-gradient-to-br from-[var(--primary)] to-[var(--highlight)] rounded-full mt-2 mr-3 flex-shrink-0 group-hover:scale-125 transition-transform"></span>
                           <span>{highlight}</span>
                         </li>
                       ))}
@@ -183,15 +183,6 @@ const Research = () => {
                         </p>
                       </div>
                     </div>
-                    
-                    {/* Uncomment when you have actual images
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover"
-                    />
-                    */}
                   </div>
                 </motion.div>
               </Tab.Panel>

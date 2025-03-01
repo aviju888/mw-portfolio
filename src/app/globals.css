@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 :root {
-  /* Sunset-inspired color palette */
+  /* Green color palette */
   --background: #ffffff;
   --foreground: #323232;
-  --primary: #ff7e5f; /* Sunset orange */
-  --secondary: #765285; /* Twilight purple */
-  --accent: #feb47b; /* Soft golden */
+  --primary: #0D5B11; /* Dark green */
+  --secondary: #187C19; /* Medium green */
+  --accent: #69B41E; /* Light green */
+  --highlight: #8DC71E; /* Brightest green */
   --light-gray: #f8f9fa;
   --medium-gray: #e9ecef;
   
@@ -16,21 +17,21 @@
   --heading-color: #2d3748;
   --text-color: #4a5568;
   --border-color: #edf2f7;
-  --success: #68d391;
+  --success: #0D5B11;
   --error: #fc8181;
-  --sunset-gradient: linear-gradient(135deg, #ff7e5f, #feb47b);
-  --twilight-gradient: linear-gradient(135deg, #6a67ce, #fc636b);
-  --deep-blue: #2c3e50;
-  --soft-pink: #ffafbd;
+  --green-gradient: linear-gradient(135deg, #0D5B11, #8DC71E);
+  --forest-gradient: linear-gradient(135deg, #0D5B11, #69B41E);
+  --moss-gradient: linear-gradient(135deg, #187C19, #8DC71E);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #1a202c;
     --foreground: #f7fafc;
-    --primary: #ff9f7f; /* Brighter sunset orange for dark mode */
-    --secondary: #9b6fac; /* Lighter twilight purple for dark mode */
-    --accent: #ffc89a; /* Brighter soft golden for dark mode */
+    --primary: #187C19; /* Medium green, brighter for dark mode */
+    --secondary: #69B41E; /* Light green for dark mode */
+    --accent: #8DC71E; /* Brightest green for dark mode */
+    --highlight: #a3d83a; /* Even brighter for dark mode */
     --light-gray: #2d3748;
     --medium-gray: #4a5568;
     
@@ -38,7 +39,7 @@
     --heading-color: #f0f4f8;
     --text-color: #e2e8f0;
     --border-color: #4a5568;
-    --success: #38a169;
+    --success: #187C19;
     --error: #e53e3e;
   }
 }
