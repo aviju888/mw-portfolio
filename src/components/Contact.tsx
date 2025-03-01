@@ -62,8 +62,8 @@ const Contact = () => {
           variants={fadeIn}
           className="text-center mb-16"
         >
-          <span className="inline-block py-1 px-3 mb-3 bg-[var(--accent)] bg-opacity-10 text-[var(--primary)] font-medium rounded-full text-sm">
-            Let's Connect
+          <span className="inline-block py-1 px-3 mb-3 bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 text-[var(--primary)] font-semibold rounded-full text-sm shadow-sm">
+            Let&apos;s Connect
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--heading-color)] mb-4">
             Contact Me
@@ -163,7 +163,7 @@ const Contact = () => {
                   <span className="w-8 h-8 bg-green-200 dark:bg-green-800 text-green-600 dark:text-green-200 rounded-full flex items-center justify-center mr-3">
                     <FaEnvelope size={14} />
                   </span>
-                  <p>Thank you for your message! I'll get back to you soon.</p>
+                  <p>Thank you for your message! I&apos;ll get back to you soon.</p>
                 </div>
               ) : null}
               

@@ -53,12 +53,12 @@ const About = () => {
               
               <div className="pl-4 border-l-3 border-[var(--primary)]">
                 <p className="text-lg italic text-[var(--text-color)]">
-                  "I'm known for my fast-learning and proactive character, with a drive to exceed baseline expectations."
+                  &quot;I&apos;m known for my fast-learning and proactive character, with a drive to exceed baseline expectations.&quot;
                 </p>
               </div>
               
               <p className="text-lg text-[var(--text-color)]">
-                With over 2 years of experience in bioconjugation and research, I bring valuable skills and a high level of dedication to any role I take on. Located in Lafayette, CA, I'm actively seeking opportunities to apply my skills in microbiology, bioconjugation, and research.
+                With over 2 years of experience in bioconjugation and research, I bring valuable skills and a high level of dedication to any role I take on. Located in Lafayette, CA, I&apos;m actively seeking opportunities to apply my skills in microbiology, bioconjugation, and research.
               </p>
             </div>
           </motion.div>

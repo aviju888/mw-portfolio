@@ -1,12 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden">
+    <section className="relative min-h-screen w-full overflow-hidden flex items-center">
       {/* Sunset background - simplified gradient that covers viewport exactly */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#ff7e5f] via-[#feb47b] to-white dark:to-gray-900 z-0"></div>
       
@@ -14,8 +13,8 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[url('/images/subtle-nature-pattern.svg')] bg-repeat opacity-5 z-0"></div>
       <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-white dark:from-gray-900 to-transparent z-0"></div>
       
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 h-full flex flex-col justify-center">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 py-16 md:py-24">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

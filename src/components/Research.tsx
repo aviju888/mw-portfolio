@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { Tab } from '@headlessui/react';
 import { FaFlask, FaCode, FaPalette } from 'react-icons/fa';
 
