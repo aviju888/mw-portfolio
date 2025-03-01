@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# UC Berkeley Microbiology Portfolio Template
+
+A modern, responsive portfolio website template designed specifically for microbiology majors from UC Berkeley. This template showcases academic achievements, research experience, publications, and professional skills in a visually appealing way.
+
+## Features
+
+- **Responsive Design**: Fully responsive layout that works on all devices
+- **Modern UI**: Clean and professional design with smooth animations
+- **Dark Mode Support**: Automatic dark/light mode based on user preference
+- **Optimized for Microbiology**: Sections specifically designed for research projects, lab skills, and publications
+- **SEO Friendly**: Built with best practices for search engine optimization
+- **Accessible**: Follows accessibility guidelines for all users
+- **UC Berkeley Theme**: Features the official UC Berkeley colors
+
+## Sections
+
+1. **Hero Section**: Introduction and profile summary
+2. **About**: Personal background and research interests
+3. **Research Projects**: Showcase for research work
+4. **Education**: Academic background and achievements
+5. **Skills**: Technical and professional capabilities
+6. **Publications**: Academic papers and research outputs
+7. **Contact**: Contact form and information
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) - React framework for production
+- [TypeScript](https://www.typescriptlang.org/) - Type safety and better developer experience
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - Animation library
+- [React Icons](https://react-icons.github.io/react-icons/) - Icon library
+- [Headless UI](https://headlessui.com/) - Accessible UI components
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ and npm
+
+### Installation
+
+1. Clone this repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/berkeley-microbiology-portfolio.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory
+```bash
+cd berkeley-microbiology-portfolio
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Install dependencies
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server
+```bash
+npm run dev
+```
 
-## Learn More
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-To learn more about Next.js, take a look at the following resources:
+## Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Personal Information**: Update your name, contact details, and social media links in various components.
+2. **Content**: Modify the content in each component to reflect your own experiences, projects, and skills.
+3. **Images**: Replace the placeholder images with your own photos in the `/public/images/` directory.
+4. **Colors**: Adjust the color scheme in `src/app/globals.css` if you prefer different colors.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+This template can be easily deployed to Vercel, Netlify, or any other hosting platform that supports Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For example, to deploy to Vercel:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm install -g vercel
+vercel
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgements
+
+- UC Berkeley for the color scheme inspiration
+- The Next.js team for the amazing framework
+- All the open-source libraries used in this project
+
+---
+
+Designed with 💙💛 for UC Berkeley Microbiology majors

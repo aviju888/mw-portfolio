@@ -1,0 +1,66 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Simple leaf shape -->
+    <path id="leaf" d="M10,0 C5,5 0,10 0,15 C0,20 5,25 10,20 C15,25 20,20 20,15 C20,10 15,5 10,0 Z" fill-opacity="0.03" />
+    <!-- Water droplet shape -->
+    <path id="droplet" d="M5,0 C5,0 0,5 0,10 C0,12.5 2.5,15 5,15 C7.5,15 10,12.5 10,10 C10,5 5,0 5,0 Z" fill-opacity="0.03" />
+  </defs>
+  
+  <!-- Grid of leaves -->
+  <g fill="#4CAF50">
+    <use href="#leaf" x="10" y="10" />
+    <use href="#leaf" x="60" y="10" transform="rotate(45, 70, 20)" />
+    <use href="#leaf" x="110" y="10" transform="rotate(-30, 120, 20)" />
+    <use href="#leaf" x="160" y="10" transform="rotate(15, 170, 20)" />
+    
+    <use href="#leaf" x="10" y="60" transform="rotate(-15, 20, 70)" />
+    <use href="#leaf" x="110" y="60" transform="rotate(60, 120, 70)" />
+    <use href="#leaf" x="160" y="60" transform="rotate(-45, 170, 70)" />
+    
+    <use href="#leaf" x="10" y="110" transform="rotate(30, 20, 120)" />
+    <use href="#leaf" x="60" y="110" transform="rotate(-60, 70, 120)" />
+    <use href="#leaf" x="160" y="110" transform="rotate(20, 170, 120)" />
+    
+    <use href="#leaf" x="10" y="160" transform="rotate(75, 20, 170)" />
+    <use href="#leaf" x="60" y="160" transform="rotate(-20, 70, 170)" />
+    <use href="#leaf" x="110" y="160" transform="rotate(40, 120, 170)" />
+  </g>
+  
+  <!-- Grid of water droplets -->
+  <g fill="#B3E5FC">
+    <use href="#droplet" x="40" y="40" />
+    <use href="#droplet" x="90" y="40" transform="rotate(45, 95, 45)" />
+    <use href="#droplet" x="140" y="40" transform="rotate(-30, 145, 45)" />
+    
+    <use href="#droplet" x="40" y="90" transform="rotate(-45, 45, 95)" />
+    <use href="#droplet" x="90" y="90" transform="rotate(180, 95, 95)" />
+    <use href="#droplet" x="140" y="90" transform="rotate(90, 145, 95)" />
+    
+    <use href="#droplet" x="40" y="140" transform="rotate(60, 45, 145)" />
+    <use href="#droplet" x="90" y="140" transform="rotate(-60, 95, 145)" />
+    <use href="#droplet" x="140" y="140" transform="rotate(30, 145, 145)" />
+  </g>
+  
+  <!-- Subtle dots -->
+  <g fill="#FF8F00" fill-opacity="0.02">
+    <circle cx="25" cy="25" r="2" />
+    <circle cx="75" cy="25" r="2" />
+    <circle cx="125" cy="25" r="2" />
+    <circle cx="175" cy="25" r="2" />
+    
+    <circle cx="25" cy="75" r="2" />
+    <circle cx="75" cy="75" r="2" />
+    <circle cx="125" cy="75" r="2" />
+    <circle cx="175" cy="75" r="2" />
+    
+    <circle cx="25" cy="125" r="2" />
+    <circle cx="75" cy="125" r="2" />
+    <circle cx="125" cy="125" r="2" />
+    <circle cx="175" cy="125" r="2" />
+    
+    <circle cx="25" cy="175" r="2" />
+    <circle cx="75" cy="175" r="2" />
+    <circle cx="125" cy="175" r="2" />
+    <circle cx="175" cy="175" r="2" />
+  </g>
+</svg> 
