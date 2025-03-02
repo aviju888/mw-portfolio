@@ -24,7 +24,11 @@ const Education = () => {
       title: "B.S. Microbial Biology",
       institution: "University of California, Berkeley",
       period: "2020-2024",
-      details: "Bachelor of Science in Microbial Biology with a 3.814 GPA. Specializing in multidisciplinary courses in chemistry, physics, and biology, as well as coding applications in bioengineering.",
+      details: [
+        "Bachelor of Science in Microbial Biology with a 3.814 GPA",
+        "Specializing in multidisciplinary courses in chemistry, physics, and biology", 
+        "Focused on coding applications in bioengineering"
+      ],
       icon: <FaGraduationCap className="w-5 h-5" />,
       color: "bg-[var(--secondary)]",
       url: ""
@@ -34,17 +38,27 @@ const Education = () => {
       title: "Undergraduate Researcher",
       institution: "Niyogi Lab, PMB, UC Berkeley",
       period: "August 2022 - May 2024",
-      details: "Conducted research in the Plant and Microbial Biology department, focused on developing laboratory techniques and contributing to ongoing research projects primarily on increasing photosynthesis. Maintained transgenic algae culture lines, conducted independent experiments, and optimized experimental conditions and protocols.",
+      details: [
+        "Conducted research in the Plant and Microbial Biology department focused on increasing photosynthesis",
+        "Maintained transgenic algae culture lines through laboratory techniques",
+        "Conducted independent experiments from algae transformation to protein expression analysis",
+        "Optimized experimental conditions and protocols to improve data collection and reproducibility"
+      ],
       icon: <FaFlask className="w-5 h-5" />,
       color: "bg-[var(--accent)]",
       url: "https://niyogilab.berkeley.edu/"
     },
     {
       type: "work",
-      title: "Tech Team Leader Executive",
+      title: "Tech Team Lead Executive",
       institution: "KOSMOS, UC Berkeley",
       period: "May 2023 - July 2024",
-      details: "Orchestrated seamless collaboration and coordination with 120+ individuals, managing filming schedules, video editing timelines, equipment logistics, and ensuring cohesive execution of projects. Streamlined organizational efficiency and fostered tech team skill development through workshops.",
+      details: [
+        "Orchestrated seamless collaboration and coordination with 120+ individuals",
+        "Managed filming schedules, video editing timelines, and equipment logistics",
+        "Streamlined organizational efficiency through comprehensive digital archives",
+        "Fostered tech team skill development through workshops on editing and filming techniques"
+      ],
       icon: <FaBriefcase className="w-5 h-5" />,
       color: "bg-[var(--highlight)]",
       url: "https://www.youtube.com/channel/UChvWutuKGAvyALW_fWDNfXg"
@@ -54,7 +68,12 @@ const Education = () => {
       title: "Director Intern",
       institution: "Glamity, UC Berkeley",
       period: "January 2024 - May 2024",
-      details: "Organized photoshoots, facilitated dance practices by delegating responsibilities, maintained timely schedules, and fostered team spirit. Organized and maintained digital archives for easy member access to team logistics.",
+      details: [
+        "Organized photoshoots involving 30+ people to promote team performances",
+        "Facilitated dance practices by delegating responsibilities and maintaining schedules",
+        "Fostered team spirit through collaborative leadership",
+        "Organized and maintained digital archives for easy team logistics access"
+      ],
       icon: <FaBriefcase className="w-5 h-5" />,
       color: "bg-[var(--accent)]",
       url: "https://www.instagram.com/glamityatcal/"
@@ -64,7 +83,12 @@ const Education = () => {
       title: "Computer Science Academic Intern",
       institution: "CS10, UC Berkeley",
       period: "June 2021 - May 2022",
-      details: "Mentored 20+ students in 4hr coding lab sections, providing guidance on assignments and over 15+ projects. Expertly taught Python code and troubleshooted coding issues, effectively helping students achieve understanding and completion of coding assignments.",
+      details: [
+        "Mentored 20+ students in 4hr coding lab sections",
+        "Provided guidance on assignments and over 15+ projects",
+        "Expertly taught Python code and troubleshooted coding issues",
+        "Helped students achieve understanding and completion of coding assignments"
+      ],
       icon: <FaChalkboardTeacher className="w-5 h-5" />,
       color: "bg-[var(--brightest)]",
       url: "https://cs10.org/sp22/"
@@ -74,7 +98,12 @@ const Education = () => {
       title: "Biology Lab Intern",
       institution: "Bio1AL, UC Berkeley",
       period: "January 2022 - May 2022",
-      details: "Arranged and assisted lab experiments for 25+ students for 3hr weekly lab section. Performed student's lab assignments accurately in half the allotted time through time management and professional scientific techniques. Facilitated exam logistics for 100+ students.",
+      details: [
+        "Arranged and assisted lab experiments for 25+ students in 3hr weekly lab sections",
+        "Performed student lab assignments accurately in half the allotted time",
+        "Utilized professional scientific techniques and efficient time management",
+        "Facilitated exam logistics for 100+ students"
+      ],
       icon: <FaFlask className="w-5 h-5" />,
       color: "bg-[var(--highlight)]",
       url: ""
@@ -84,7 +113,12 @@ const Education = () => {
       title: "Bioconjugation Intern",
       institution: "Biotium, Fremont",
       period: "May 2022 - August 2022",
-      details: "Executed 3-4 high-yield bioconjugation production simultaneously through strategic planning and chromatographic purification. Mastered and adapted workflow in 2-weeks and trained 2 fellow interns. Increased production by ~75% through collaboration with supervisors and staff.",
+      details: [
+        "Executed 3-4 high-yield bioconjugation productions simultaneously",
+        "Utilized strategic planning and chromatographic purification techniques",
+        "Mastered and adapted workflow in 2-weeks and trained 2 fellow interns",
+        "Increased production by ~75% through effective collaboration with supervisors and staff"
+      ],
       icon: <FaFlask className="w-5 h-5" />,
       color: "bg-[var(--brightest)]",
       url: ""
@@ -94,7 +128,12 @@ const Education = () => {
       title: "Musical Producer and Manager",
       institution: "AHS Performing Arts Center | Lafayette, CA",
       period: "January 2018 - March 2020",
-      details: "Coordinated with 12+ local businesses to gather funds and increase promotion for annual musicals. Managed rehearsal scheduling for cast members and staff for each 4-month production. Maintained online resources and documentation for 70+ cast members and staff.",
+      details: [
+        "Coordinated with 12+ local businesses to gather funds for annual musicals",
+        "Increased promotion through strategic community partnerships",
+        "Managed rehearsal scheduling for cast members and staff for 4-month productions",
+        "Maintained online resources and documentation for 70+ cast members and staff"
+      ],
       icon: <FaBriefcase className="w-5 h-5" />,
       color: "bg-[var(--accent)]",
       url: ""
@@ -173,9 +212,14 @@ const Education = () => {
                       </div>
                     </div>
                   </div>
-                  <p className="text-[var(--text-color)]">
-                    {exp.details}
-                  </p>
+                  <ul className="space-y-2 text-[var(--text-color)]">
+                    {exp.details.map((detail, idx) => (
+                      <li key={idx} className="flex items-start">
+                        <span className="inline-block w-2 h-2 bg-gradient-to-br from-[var(--secondary)] to-[var(--highlight)] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </motion.div>
             ))}
