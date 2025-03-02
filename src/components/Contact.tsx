@@ -14,6 +14,30 @@ const Contact = () => {
     }
   };
 
+  const contactItems = [
+    {
+      icon: <MdEmail size={22} />,
+      label: "Email",
+      value: "moniwang9242@gmail.com",
+      link: "mailto:moniwang9242@gmail.com",
+      gradient: "from-[var(--secondary)] to-[var(--accent)]"
+    },
+    {
+      icon: <FaMapMarkerAlt size={20} />,
+      label: "Location",
+      value: "Lafayette, CA",
+      link: null,
+      gradient: "from-[var(--accent)] to-[var(--highlight)]"
+    },
+    {
+      icon: <FaPhone size={20} />,
+      label: "Phone",
+      value: "(925) 878-2788",
+      link: "tel:9258782788",
+      gradient: "from-[var(--highlight)] to-[var(--secondary)]"
+    }
+  ];
+
   return (
     <section id="contact" className="py-20 md:py-28 bg-white dark:bg-gray-900 relative overflow-hidden">
       {/* Decorative background elements */}
@@ -40,7 +64,7 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-xl mx-auto">
           <motion.div 
             initial="hidden"
             whileInView="visible"
@@ -52,46 +76,27 @@ const Contact = () => {
                 Get In Touch
               </h3>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--secondary)] to-[var(--accent)] text-white flex items-center justify-center shadow-sm mr-4">
-                    <MdEmail size={22} />
+              <div className="space-y-6">
+                {contactItems.map((item, index) => (
+                  <div key={index} className="flex items-center">
+                    <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${item.gradient} text-white flex items-center justify-center shadow-sm mr-4 flex-shrink-0`}>
+                      {item.icon}
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-[var(--heading-color)]">{item.label}</h4>
+                      {item.link ? (
+                        <a 
+                          href={item.link} 
+                          className="text-[var(--text-color)] hover:text-[var(--secondary)] transition-colors"
+                        >
+                          {item.value}
+                        </a>
+                      ) : (
+                        <p className="text-[var(--text-color)]">{item.value}</p>
+                      )}
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-[var(--heading-color)] mb-1">Email</h4>
-                    <a 
-                      href="mailto:moniwang9242@gmail.com" 
-                      className="text-[var(--text-color)] hover:text-[var(--secondary)] transition-colors"
-                    >
-                      moniwang9242@gmail.com
-                    </a>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--accent)] to-[var(--highlight)] text-white flex items-center justify-center shadow-sm mr-4">
-                    <FaMapMarkerAlt size={20} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-[var(--heading-color)] mb-1">Location</h4>
-                    <p className="text-[var(--text-color)]">Lafayette, CA</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--highlight)] to-[var(--secondary)] text-white flex items-center justify-center shadow-sm mr-4">
-                    <FaPhone size={20} />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-[var(--heading-color)] mb-1">Phone</h4>
-                    <a 
-                      href="tel:9258782788" 
-                      className="text-[var(--text-color)] hover:text-[var(--secondary)] transition-colors"
-                    >
-                      (925) 878-2788
-                    </a>
-                  </div>
-                </div>
+                ))}
               </div>
               
               <div className="mt-10 pt-6 border-t border-gray-100 dark:border-gray-700 text-center">
