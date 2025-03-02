@@ -15,8 +15,9 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 md:py-28 bg-white dark:bg-gray-900 relative">
-      {/* Subtle corner accent */}
+      {/* Subtle accent elements */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--highlight)] opacity-5 rounded-bl-full"></div>
+      <div className="absolute bottom-40 left-20 w-32 h-32 bg-[var(--secondary)] opacity-5 rounded-full"></div>
       
       <div className="container-custom">
         <motion.div 
@@ -26,13 +27,13 @@ const About = () => {
           variants={fadeIn}
           className="text-center mb-16"
         >
-          <span className="inline-block py-1 px-3 mb-3 bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 text-[var(--primary)] font-semibold rounded-full text-sm shadow-sm">
+          <span className="inline-block py-1 px-3 mb-3 bg-[var(--secondary)]/10 dark:bg-[var(--secondary)]/20 rounded-full text-[var(--secondary)] font-semibold text-sm shadow-sm">
             About Me
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--heading-color)] mb-4">
             Passionate about Microbial Biology
           </h2>
-          <div className="w-24 h-1 bg-[var(--primary)] mx-auto rounded-full mb-6"></div>
+          <div className="w-24 h-1 bg-[var(--secondary)] mx-auto rounded-full mb-6"></div>
           <p className="max-w-3xl mx-auto text-[var(--text-color)] text-lg">
             A dedicated researcher with experience in bioconjugation, academic research, and laboratory techniques
           </p>
@@ -44,14 +45,14 @@ const About = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeIn}
-            className="card card-hover"
+            className="card card-hover border-[var(--secondary)]/10"
           >
             <div className="space-y-6">
               <p className="text-lg text-[var(--text-color)]">
                 I am a recent Microbial Biology graduate from UC Berkeley with a strong background in laboratory techniques and research. My professional experiences include bioconjugation production at Biotium and academic research at the Niyogi Lab at Berkeley.
               </p>
               
-              <div className="pl-4 border-l-3 border-[var(--primary)]">
+              <div className="pl-4 border-l-3 border-[var(--secondary)]">
                 <p className="text-lg italic text-[var(--text-color)]">
                   &quot;I&apos;m known for my fast-learning and proactive character, with a drive to exceed baseline expectations.&quot;
                 </p>
@@ -71,38 +72,38 @@ const About = () => {
             className="grid grid-cols-2 gap-6"
           >
             {/* Card 1 */}
-            <div className="card card-hover group">
-              <div className="mx-auto w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[var(--primary)] to-[var(--accent)] text-white rounded-xl mb-5 group-hover:scale-110 transition-transform duration-300">
+            <div className="card card-hover group bg-white border-[var(--secondary)]/10">
+              <div className="mx-auto w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[var(--secondary)] to-[var(--accent)] text-white rounded-xl mb-5 group-hover:scale-110 transition-transform duration-300">
                 <FaMicroscope size={24} />
               </div>
-              <h3 className="font-semibold text-lg mb-2 text-center text-[var(--heading-color)]">Bioconjugation</h3>
+              <h3 className="font-semibold text-lg mb-2 text-center text-[var(--secondary)]">Bioconjugation</h3>
               <p className="text-[var(--text-color)] text-center text-sm">Production experience at Biotium</p>
             </div>
             
             {/* Card 2 */}
-            <div className="card card-hover group">
-              <div className="mx-auto w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[var(--primary)] to-[var(--highlight)] text-white rounded-xl mb-5 group-hover:scale-110 transition-transform duration-300">
+            <div className="card card-hover group bg-white border-[var(--secondary)]/10">
+              <div className="mx-auto w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[var(--secondary)] to-[var(--highlight)] text-white rounded-xl mb-5 group-hover:scale-110 transition-transform duration-300">
                 <FaDna size={24} />
               </div>
-              <h3 className="font-semibold text-lg mb-2 text-center text-[var(--heading-color)]">Research</h3>
+              <h3 className="font-semibold text-lg mb-2 text-center text-[var(--secondary)]">Research</h3>
               <p className="text-[var(--text-color)] text-center text-sm">Academic research experience</p>
             </div>
             
             {/* Card 3 */}
-            <div className="card card-hover group">
+            <div className="card card-hover group bg-white border-[var(--secondary)]/10">
               <div className="mx-auto w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[var(--secondary)] to-[var(--primary)] text-white rounded-xl mb-5 group-hover:scale-110 transition-transform duration-300">
                 <FaFlask size={24} />
               </div>
-              <h3 className="font-semibold text-lg mb-2 text-center text-[var(--heading-color)]">Lab Techniques</h3>
+              <h3 className="font-semibold text-lg mb-2 text-center text-[var(--secondary)]">Lab Techniques</h3>
               <p className="text-[var(--text-color)] text-center text-sm">Extensive lab proficiency</p>
             </div>
             
             {/* Card 4 */}
-            <div className="card card-hover group">
-              <div className="mx-auto w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[var(--secondary)] to-[var(--accent)] text-white rounded-xl mb-5 group-hover:scale-110 transition-transform duration-300">
+            <div className="card card-hover group bg-white border-[var(--secondary)]/10">
+              <div className="mx-auto w-14 h-14 flex items-center justify-center bg-gradient-to-br from-[var(--accent)] to-[var(--secondary)] text-white rounded-xl mb-5 group-hover:scale-110 transition-transform duration-300">
                 <FaChalkboardTeacher size={24} />
               </div>
-              <h3 className="font-semibold text-lg mb-2 text-center text-[var(--heading-color)]">Teaching</h3>
+              <h3 className="font-semibold text-lg mb-2 text-center text-[var(--secondary)]">Teaching</h3>
               <p className="text-[var(--text-color)] text-center text-sm">Experience as an academic intern</p>
             </div>
           </motion.div>

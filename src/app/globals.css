@@ -3,13 +3,15 @@
 @tailwind utilities;
 
 :root {
-  /* Green color palette */
+  /* Green accent color palette with white primary */
   --background: #ffffff;
   --foreground: #323232;
-  --primary: #0D5B11; /* Dark green */
-  --secondary: #187C19; /* Medium green */
-  --accent: #69B41E; /* Light green */
-  --highlight: #8DC71E; /* Brightest green */
+  --primary: #ffffff; /* White as primary */
+  --text-primary: #0D5B11; /* Use dark green for primary text */
+  --secondary: #0D5B11; /* Dark green */
+  --accent: #187C19; /* Medium green */
+  --highlight: #69B41E; /* Light green */
+  --brightest: #8DC71E; /* Brightest green */
   --light-gray: #f8f9fa;
   --medium-gray: #e9ecef;
   
@@ -22,26 +24,7 @@
   --green-gradient: linear-gradient(135deg, #0D5B11, #8DC71E);
   --forest-gradient: linear-gradient(135deg, #0D5B11, #69B41E);
   --moss-gradient: linear-gradient(135deg, #187C19, #8DC71E);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1a202c;
-    --foreground: #f7fafc;
-    --primary: #187C19; /* Medium green, brighter for dark mode */
-    --secondary: #69B41E; /* Light green for dark mode */
-    --accent: #8DC71E; /* Brightest green for dark mode */
-    --highlight: #a3d83a; /* Even brighter for dark mode */
-    --light-gray: #2d3748;
-    --medium-gray: #4a5568;
-    
-    /* Dark mode colors */
-    --heading-color: #f0f4f8;
-    --text-color: #e2e8f0;
-    --border-color: #4a5568;
-    --success: #187C19;
-    --error: #e53e3e;
-  }
+  --white-green-gradient: linear-gradient(135deg, #ffffff, #8DC71E);
 }
 
 /* Fix horizontal scrolling issues */
@@ -61,7 +44,7 @@ html, body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary);
+  background: var(--secondary);
   border-radius: 2px;
 }
 
@@ -88,12 +71,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .btn-primary {
-    @apply bg-[var(--primary)] text-white py-2.5 px-6 rounded-md hover:opacity-90 transition duration-300 font-medium text-sm;
+    @apply bg-[var(--secondary)] text-white py-2.5 px-6 rounded-md hover:opacity-90 transition duration-300 font-medium text-sm;
     box-shadow: 0 1px 2px rgba(0,0,0,0.05);
   }
   
   .btn-secondary {
-    @apply bg-white border border-[var(--primary)] text-[var(--primary)] py-2.5 px-6 rounded-md hover:bg-[var(--primary)] hover:text-white transition duration-300 font-medium text-sm;
+    @apply bg-white border border-[var(--secondary)] text-[var(--secondary)] py-2.5 px-6 rounded-md hover:bg-[var(--secondary)] hover:text-white transition duration-300 font-medium text-sm;
     box-shadow: 0 1px 2px rgba(0,0,0,0.05);
   }
   
@@ -106,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
       left: 0;
       width: 40px;
       height: 3px;
-      background: var(--primary);
+      background: var(--secondary);
       border-radius: 2px;
     }
   }
@@ -117,12 +100,12 @@ h1, h2, h3, h4, h5, h6 {
   
   /* Modern card style */
   .card {
-    @apply bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-lg p-6 transition-all duration-300;
+    @apply bg-white border border-gray-100 rounded-lg p-6 transition-all duration-300;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   }
 
   .card-hover {
-    @apply hover:shadow-md hover:border-gray-200 dark:hover:border-gray-600;
+    @apply hover:shadow-md hover:border-gray-200;
   }
 }
 
@@ -139,12 +122,12 @@ p, li, a {
 }
 
 a {
-  @apply text-[var(--primary)] hover:text-[var(--secondary)] transition-colors;
+  @apply text-[var(--secondary)] hover:text-[var(--accent)] transition-colors;
 }
 
 /* More subtle focus styles */
 *:focus {
-  outline: 2px solid var(--primary);
+  outline: 2px solid var(--secondary);
   outline-offset: 2px;
 }
 
@@ -168,7 +151,7 @@ section + section::before {
 /* Improved contrast for section tags */
 span.inline-block.py-1.px-3.mb-3 {
   background-color: rgba(255, 255, 255, 0.8) !important;
-  color: var(--primary) !important;
+  color: var(--secondary) !important;
   font-weight: 600;
   backdrop-filter: blur(4px);
 }

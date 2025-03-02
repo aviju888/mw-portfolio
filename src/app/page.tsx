@@ -4,7 +4,7 @@ import About from "@/components/About";
 import Research from "@/components/Research";
 import Education from "@/components/Education";
 import Skills from "@/components/Skills";
-import Publications from "@/components/Publications";
+import ProjectsPapers from "@/components/ProjectsPapers";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -17,7 +17,7 @@ export default function Home() {
       <Research />
       <Education />
       <Skills />
-      <Publications />
+      <ProjectsPapers />
       <Contact />
       <Footer />
     </main>

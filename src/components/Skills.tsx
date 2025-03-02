@@ -1,7 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaFlask, FaLaptopCode, FaUsers } from 'react-icons/fa';
+import { 
+  FaFlask, 
+  FaCode, 
+  FaMicroscope, 
+  FaChalkboardTeacher, 
+  FaUsers, 
+  FaFileAlt 
+} from 'react-icons/fa';
 
 const Skills = () => {
   const fadeIn = {
@@ -15,57 +22,102 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      category: "Laboratory Techniques",
-      icon: <FaFlask size={20} />,
+      title: "Laboratory Techniques",
+      icon: <FaFlask className="w-6 h-6" />,
       skills: [
-        "Column Chromatography",
-        "Micropipette",
-        "Microscopy",
-        "Spectrophotometer",
-        "DNA/RNA Isolation",
-        "PCR",
+        "PCR & qPCR Methods",
+        "ELISA & Immunoassays",
         "Gel Electrophoresis",
-        "Western Blot"
+        "Western Blotting",
+        "Cell Culture",
+        "Flow Cytometry",
+        "Bioconjugation",
+        "Protein Purification"
       ],
-      color: "from-[var(--primary)] to-[var(--accent)]"
+      color: "from-[var(--secondary)] to-[var(--accent)]"
     },
     {
-      category: "Programming & Software",
-      icon: <FaLaptopCode size={20} />,
+      title: "Technical Skills",
+      icon: <FaCode className="w-6 h-6" />,
       skills: [
-        "Google Suite",
-        "Microsoft Office",
         "Python",
-        "Java",
-        "SQL",
         "R Programming",
-        "Adobe Suite",
-        "Scheme & Regex"
+        "MATLAB",
+        "Data Analysis",
+        "Statistical Methods",
+        "Bioinformatics",
+        "Adobe Creative Suite",
+        "Laboratory Software"
       ],
-      color: "from-[var(--secondary)] to-[var(--primary)]"
+      color: "from-[var(--accent)] to-[var(--highlight)]"
     },
     {
-      category: "Soft Skills & Languages",
-      icon: <FaUsers size={20} />,
+      title: "Research Competencies",
+      icon: <FaMicroscope className="w-6 h-6" />,
+      skills: [
+        "Experimental Design",
+        "Scientific Literature Review",
+        "Protocol Optimization",
+        "Data Interpretation",
+        "Research Documentation",
+        "Quantitative Analysis",
+        "Method Development",
+        "Troubleshooting"
+      ],
+      color: "from-[var(--highlight)] to-[var(--secondary)]"
+    },
+    {
+      title: "Teaching & Communication",
+      icon: <FaChalkboardTeacher className="w-6 h-6" />,
+      skills: [
+        "Scientific Writing",
+        "Research Presentations",
+        "Classroom Instruction",
+        "One-on-One Mentoring",
+        "Technical Reporting",
+        "Visual Communication",
+        "Public Speaking",
+        "Documentation"
+      ],
+      color: "from-[var(--secondary)] to-[var(--highlight)]"
+    },
+    {
+      title: "Leadership & Teamwork",
+      icon: <FaUsers className="w-6 h-6" />,
       skills: [
         "Team Coordination",
-        "Teaching & Mentoring",
-        "Documentation",
         "Project Management",
-        "Leadership",
-        "Creative Problem Solving",
-        "Communication",
-        "Mandarin (Intermediate)"
+        "Stakeholder Communication",
+        "Strategic Planning",
+        "Conflict Resolution",
+        "Training & Development",
+        "Meeting Facilitation",
+        "Collaborative Research"
+      ],
+      color: "from-[var(--secondary)] to-[var(--accent)]"
+    },
+    {
+      title: "Professional Development",
+      icon: <FaFileAlt className="w-6 h-6" />,
+      skills: [
+        "Grant Writing",
+        "Regulatory Compliance",
+        "Laboratory Safety",
+        "Research Ethics",
+        "Quality Assurance",
+        "Scientific Publishing",
+        "Conference Participation",
+        "Networking"
       ],
       color: "from-[var(--accent)] to-[var(--secondary)]"
     }
   ];
 
   return (
-    <section id="skills" className="py-20 md:py-28 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 relative">
+    <section id="skills" className="py-20 md:py-28 bg-white dark:bg-gray-900 relative">
       {/* Decorative elements */}
-      <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-[var(--primary)] opacity-5"></div>
-      <div className="absolute bottom-20 right-10 w-56 h-56 bg-[var(--accent)] opacity-5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-0 w-64 h-64 bg-[var(--secondary)] opacity-5 rounded-full"></div>
+      <div className="absolute bottom-40 right-20 w-48 h-48 bg-[var(--highlight)] opacity-5 rounded-full"></div>
       
       <div className="container-custom relative z-10">
         <motion.div 
@@ -75,51 +127,55 @@ const Skills = () => {
           variants={fadeIn}
           className="text-center mb-16"
         >
-          <span className="inline-block py-1 px-3 mb-3 bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 text-[var(--primary)] font-semibold rounded-full text-sm shadow-sm">
+          <span className="inline-block py-1 px-3 mb-3 bg-[var(--secondary)]/10 dark:bg-[var(--secondary)]/20 rounded-full text-[var(--secondary)] font-semibold text-sm shadow-sm">
             My Expertise
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--heading-color)] mb-4">
             Skills & Capabilities
           </h2>
-          <div className="w-24 h-1 bg-[var(--primary)] mx-auto rounded-full mb-6"></div>
+          <div className="w-24 h-1 bg-[var(--secondary)] mx-auto rounded-full mb-6"></div>
           <p className="max-w-3xl mx-auto text-[var(--text-color)] text-lg">
-            Technical proficiencies and professional capabilities developed through education and experience
+            A comprehensive overview of my technical proficiencies and professional capabilities
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {skillCategories.map((category, categoryIndex) => (
-            <motion.div 
-              key={categoryIndex}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skillCategories.map((category, index) => (
+            <motion.div
+              key={index}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeIn}
-              className="card card-hover backdrop-blur-sm"
+              viewport={{ once: true, margin: "-50px" }}
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0,
+                  transition: { 
+                    duration: 0.5,
+                    delay: index * 0.1
+                  }
+                }
+              }}
             >
-              <div className="flex items-center mb-6 pb-3 border-b border-gray-100 dark:border-gray-700">
-                <div 
-                  className={`w-10 h-10 rounded-xl flex items-center justify-center text-white bg-gradient-to-br ${category.color} shadow-sm mr-3`}
-                >
-                  {category.icon}
-                </div>
-                <h3 className="text-xl font-bold text-[var(--heading-color)]">
-                  {category.category}
-                </h3>
-              </div>
-              
-              <div className="grid grid-cols-2 gap-3">
-                {category.skills.map((skill, skillIndex) => (
-                  <div 
-                    key={skillIndex}
-                    className="relative overflow-hidden group"
-                  >
-                    <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 group-hover:border-[var(--primary)] transition-colors">
-                      <p className="text-[var(--text-color)] font-medium text-sm">{skill}</p>
-                    </div>
-                    <div className={`absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r ${category.color} group-hover:w-full transition-all duration-300`}></div>
+              <div className="card card-hover relative backdrop-blur-sm h-full border border-[var(--secondary)]/10">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className={`w-12 h-12 rounded-lg flex items-center justify-center text-white bg-gradient-to-br ${category.color} shadow-sm`}>
+                    {category.icon}
                   </div>
-                ))}
+                  <h3 className="text-xl font-bold text-[var(--secondary)]">
+                    {category.title}
+                  </h3>
+                </div>
+                
+                <ul className="space-y-2">
+                  {category.skills.map((skill, idx) => (
+                    <li key={idx} className="flex items-center group">
+                      <span className="w-2 h-2 rounded-full bg-gradient-to-br from-[var(--secondary)] to-[var(--highlight)] mr-3 group-hover:scale-125 transition-transform"></span>
+                      <span className="text-[var(--text-color)]">{skill}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </motion.div>
           ))}

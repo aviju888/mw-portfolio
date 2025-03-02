@@ -50,9 +50,8 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 md:py-28 bg-white dark:bg-gray-900 relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute top-0 right-0 w-full h-64 bg-gradient-to-b from-gray-50 to-transparent dark:from-gray-800 dark:to-transparent opacity-70"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-[var(--primary)] opacity-5 rounded-full -translate-x-1/2 translate-y-1/3 blur-3xl"></div>
-      <div className="absolute top-40 right-0 w-72 h-72 bg-[var(--highlight)] opacity-5 rounded-full translate-x-1/2 -translate-y-1/4 blur-2xl"></div>
+      <div className="absolute top-0 right-0 w-48 h-48 bg-[var(--secondary)] opacity-5 rounded-full"></div>
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-[var(--highlight)] opacity-5 rounded-full"></div>
       
       <div className="container-custom relative z-10">
         <motion.div 
@@ -62,13 +61,13 @@ const Contact = () => {
           variants={fadeIn}
           className="text-center mb-16"
         >
-          <span className="inline-block py-1 px-3 mb-3 bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 text-[var(--primary)] font-semibold rounded-full text-sm shadow-sm">
+          <span className="inline-block py-1 px-3 mb-3 bg-[var(--secondary)]/10 dark:bg-[var(--secondary)]/20 rounded-full text-[var(--secondary)] font-semibold text-sm shadow-sm">
             Let&apos;s Connect
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--heading-color)] mb-4">
             Contact Me
           </h2>
-          <div className="w-24 h-1 bg-[var(--primary)] mx-auto rounded-full mb-6"></div>
+          <div className="w-24 h-1 bg-[var(--secondary)] mx-auto rounded-full mb-6"></div>
           <p className="max-w-3xl mx-auto text-[var(--text-color)] text-lg">
             Ready to discuss potential opportunities and collaborations? Reach out through any of these channels
           </p>
@@ -82,21 +81,21 @@ const Contact = () => {
             variants={fadeIn}
             className="lg:col-span-2"
           >
-            <div className="card card-hover backdrop-blur-sm h-full">
-              <h3 className="text-xl font-bold mb-8 text-[var(--heading-color)] pb-2 border-b border-gray-100 dark:border-gray-700">
+            <div className="card card-hover backdrop-blur-sm h-full border border-[var(--secondary)]/10">
+              <h3 className="text-xl font-bold mb-8 text-[var(--secondary)] pb-2 border-b border-gray-100 dark:border-gray-700">
                 Get In Touch
               </h3>
               
               <div className="space-y-8">
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--primary)] to-[var(--accent)] text-white flex items-center justify-center shadow-sm mr-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--secondary)] to-[var(--accent)] text-white flex items-center justify-center shadow-sm mr-4">
                     <FaEnvelope size={20} />
                   </div>
                   <div>
                     <h4 className="font-semibold text-[var(--heading-color)] mb-1">Email</h4>
                     <a 
                       href="mailto:moniwang9242@gmail.com" 
-                      className="text-[var(--text-color)] hover:text-[var(--primary)] transition-colors"
+                      className="text-[var(--text-color)] hover:text-[var(--secondary)] transition-colors"
                     >
                       moniwang9242@gmail.com
                     </a>
@@ -104,7 +103,7 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--secondary)] to-[var(--primary)] text-white flex items-center justify-center shadow-sm mr-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--accent)] to-[var(--highlight)] text-white flex items-center justify-center shadow-sm mr-4">
                     <FaMapMarkerAlt size={20} />
                   </div>
                   <div>
@@ -114,14 +113,14 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--accent)] to-[var(--secondary)] text-white flex items-center justify-center shadow-sm mr-4">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--highlight)] to-[var(--secondary)] text-white flex items-center justify-center shadow-sm mr-4">
                     <FaPhone size={20} />
                   </div>
                   <div>
                     <h4 className="font-semibold text-[var(--heading-color)] mb-1">Phone</h4>
                     <a 
                       href="tel:9258782788" 
-                      className="text-[var(--text-color)] hover:text-[var(--primary)] transition-colors"
+                      className="text-[var(--text-color)] hover:text-[var(--secondary)] transition-colors"
                     >
                       (925) 878-2788
                     </a>
@@ -137,7 +136,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/monicaqwang/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-[var(--secondary)] hover:bg-[var(--accent)] text-white rounded-lg shadow-sm hover:shadow-md transition-all"
                 >
                   <FaLinkedin size={18} />
                   <span>Monica Wang</span>
@@ -153,14 +152,14 @@ const Contact = () => {
             variants={fadeIn}
             className="lg:col-span-3"
           >
-            <div className="card card-hover backdrop-blur-sm">
-              <h3 className="text-xl font-bold mb-8 text-[var(--heading-color)] pb-2 border-b border-gray-100 dark:border-gray-700">
+            <div className="card card-hover backdrop-blur-sm border border-[var(--secondary)]/10">
+              <h3 className="text-xl font-bold mb-8 text-[var(--secondary)] pb-2 border-b border-gray-100 dark:border-gray-700">
                 Send a Message
               </h3>
               
               {submitted ? (
-                <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 text-green-800 dark:text-green-200 px-5 py-4 rounded-lg mb-6 flex items-center">
-                  <span className="w-8 h-8 bg-green-200 dark:bg-green-800 text-green-600 dark:text-green-200 rounded-full flex items-center justify-center mr-3">
+                <div className="bg-[var(--secondary)]/10 dark:bg-[var(--secondary)]/20 border border-[var(--secondary)]/20 dark:border-[var(--secondary)]/30 text-[var(--secondary)] px-5 py-4 rounded-lg mb-6 flex items-center">
+                  <span className="w-8 h-8 bg-[var(--secondary)]/20 dark:bg-[var(--secondary)]/30 text-[var(--secondary)] rounded-full flex items-center justify-center mr-3">
                     <FaEnvelope size={14} />
                   </span>
                   <p>Thank you for your message! I&apos;ll get back to you soon.</p>
@@ -178,7 +177,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent bg-gray-50 dark:bg-gray-800 text-[var(--text-color)]"
+                      className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--secondary)] focus:border-transparent bg-gray-50 dark:bg-gray-800 text-[var(--text-color)]"
                       placeholder="Your name"
                     />
                   </div>
@@ -192,7 +191,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent bg-gray-50 dark:bg-gray-800 text-[var(--text-color)]"
+                      className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--secondary)] focus:border-transparent bg-gray-50 dark:bg-gray-800 text-[var(--text-color)]"
                       placeholder="Your email address"
                     />
                   </div>
@@ -206,7 +205,7 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent bg-gray-50 dark:bg-gray-800 text-[var(--text-color)]"
+                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--secondary)] focus:border-transparent bg-gray-50 dark:bg-gray-800 text-[var(--text-color)]"
                   >
                     <option value="">Select a subject</option>
                     <option value="Job Opportunity">Job Opportunity</option>
@@ -225,14 +224,14 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent bg-gray-50 dark:bg-gray-800 text-[var(--text-color)]"
+                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--secondary)] focus:border-transparent bg-gray-50 dark:bg-gray-800 text-[var(--text-color)]"
                     placeholder="Your message"
                   ></textarea>
                 </div>
                 
                 <button 
                   type="submit" 
-                  className="w-full py-3 px-6 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white rounded-lg shadow-sm hover:shadow-md transition-shadow flex items-center justify-center gap-2"
+                  className="w-full py-3 px-6 bg-[var(--secondary)] hover:bg-[var(--accent)] text-white rounded-lg shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2"
                 >
                   <FaPaperPlane size={16} />
                   <span>Send Message</span>

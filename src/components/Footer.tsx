@@ -47,8 +47,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#publications" className="text-gray-200 hover:text-[var(--secondary)] transition-colors">
-                  Publications
+                <Link href="#projects-papers" className="text-gray-200 hover:text-[var(--secondary)] transition-colors">
+                  Projects & Papers
                 </Link>
               </li>
               <li>

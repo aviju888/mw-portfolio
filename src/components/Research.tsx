@@ -31,7 +31,7 @@ const Research = () => {
       ],
       image: "/images/research1.jpg",
       icon: <FaFlask size={20} />,
-      color: "from-[var(--primary)] to-[var(--accent)]"
+      color: "from-[var(--secondary)] to-[var(--accent)]"
     },
     {
       title: "Tech Team Leader",
@@ -46,7 +46,7 @@ const Research = () => {
       ],
       image: "/images/research2.jpg",
       icon: <FaCode size={20} />,
-      color: "from-[var(--secondary)] to-[var(--primary)]"
+      color: "from-[var(--accent)] to-[var(--secondary)]"
     },
     {
       title: "Director Intern",
@@ -61,14 +61,14 @@ const Research = () => {
       ],
       image: "/images/research3.jpg",
       icon: <FaPalette size={20} />,
-      color: "from-[var(--highlight)] to-[var(--secondary)]"
+      color: "from-[var(--highlight)] to-[var(--accent)]"
     }
   ];
 
   return (
     <section id="research" className="py-20 md:py-28 bg-white dark:bg-gray-900 relative">
       {/* Decorative elements */}
-      <div className="absolute bottom-0 right-0 w-full h-64 bg-gradient-to-t from-gray-50 to-transparent dark:from-gray-800 dark:to-transparent opacity-70"></div>
+      <div className="absolute bottom-0 right-0 w-64 h-64 bg-[var(--secondary)] opacity-5 rounded-full"></div>
       <div className="absolute top-1/3 left-0 w-48 h-48 bg-[var(--highlight)] opacity-5 rounded-full"></div>
       
       <div className="container-custom relative z-10">
@@ -79,13 +79,13 @@ const Research = () => {
           variants={fadeIn}
           className="text-center mb-16"
         >
-          <span className="inline-block py-1 px-3 mb-3 bg-white dark:bg-gray-800 bg-opacity-90 dark:bg-opacity-90 text-[var(--primary)] font-semibold rounded-full text-sm shadow-sm">
+          <span className="inline-block py-1 px-3 mb-3 bg-[var(--secondary)]/10 dark:bg-[var(--secondary)]/20 rounded-full text-[var(--secondary)] font-semibold text-sm shadow-sm">
             My Experience
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--heading-color)] mb-4">
             Research & Leadership
           </h2>
-          <div className="w-24 h-1 bg-[var(--primary)] mx-auto rounded-full mb-6"></div>
+          <div className="w-24 h-1 bg-[var(--secondary)] mx-auto rounded-full mb-6"></div>
           <p className="max-w-3xl mx-auto text-[var(--text-color)] text-lg">
             Professional research experience and leadership roles across various organizations
           </p>
@@ -99,7 +99,7 @@ const Research = () => {
                 className={({ selected }) =>
                   `w-full rounded-lg py-3 px-4 text-sm font-medium leading-5 transition-all duration-200
                   ${selected 
-                    ? 'bg-white dark:bg-gray-700 text-[var(--primary)] shadow-sm' 
+                    ? 'bg-white dark:bg-gray-700 text-[var(--secondary)] shadow-sm border border-[var(--secondary)]/20' 
                     : 'text-[var(--text-color)] hover:bg-white/[0.15] dark:hover:bg-gray-700/[0.3]'
                   }`
                 }
@@ -126,7 +126,7 @@ const Research = () => {
                   transition={{ duration: 0.5 }}
                   className="grid grid-cols-1 lg:grid-cols-5 gap-8"
                 >
-                  <div className="lg:col-span-3 card card-hover relative backdrop-blur-sm">
+                  <div className="lg:col-span-3 card card-hover relative backdrop-blur-sm border-[var(--secondary)]/10">
                     <div className="flex items-center gap-3 mb-6 pb-2 border-b border-gray-100 dark:border-gray-700">
                       <div 
                         className={`w-10 h-10 rounded-xl flex items-center justify-center text-white bg-gradient-to-br ${project.color} shadow-sm`}
@@ -134,39 +134,39 @@ const Research = () => {
                         {project.icon}
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold text-[var(--heading-color)]">{project.title}</h3>
-                        <p className="text-[var(--secondary)] text-sm">{project.subtitle}</p>
+                        <h3 className="text-xl font-bold text-[var(--secondary)]">{project.title}</h3>
+                        <p className="text-[var(--accent)] text-sm">{project.subtitle}</p>
                       </div>
                     </div>
                     
                     <div className="flex items-center mb-4 text-[var(--text-color)]">
-                      <span className="w-4 h-0.5 bg-[var(--accent)] mr-2"></span>
+                      <span className="w-4 h-0.5 bg-[var(--highlight)] mr-2"></span>
                       <span>{project.period}</span>
                     </div>
                     
-                    <p className="text-[var(--text-color)] mb-6 bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border-l-4 border-[var(--primary)]">
+                    <p className="text-[var(--text-color)] mb-6 bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border-l-4 border-[var(--secondary)]">
                       {project.description}
                     </p>
                     
-                    <h4 className="text-lg font-medium mb-4 text-[var(--heading-color)] flex items-center">
-                      <span className="w-4 h-0.5 bg-[var(--primary)] mr-2"></span>
+                    <h4 className="text-lg font-medium mb-4 text-[var(--secondary)] flex items-center">
+                      <span className="w-4 h-0.5 bg-[var(--secondary)] mr-2"></span>
                       Key Responsibilities
                     </h4>
                     
                     <ul className="space-y-3 text-[var(--text-color)]">
                       {project.highlights.map((highlight, index) => (
                         <li key={index} className="flex items-start group">
-                          <span className="inline-block w-2 h-2 bg-gradient-to-br from-[var(--primary)] to-[var(--highlight)] rounded-full mt-2 mr-3 flex-shrink-0 group-hover:scale-125 transition-transform"></span>
+                          <span className="inline-block w-2 h-2 bg-gradient-to-br from-[var(--secondary)] to-[var(--highlight)] rounded-full mt-2 mr-3 flex-shrink-0 group-hover:scale-125 transition-transform"></span>
                           <span>{highlight}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
                   
-                  <div className="lg:col-span-2 h-64 md:h-auto relative rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm card-hover">
+                  <div className="lg:col-span-2 h-64 md:h-auto relative rounded-xl overflow-hidden bg-white dark:bg-gray-800 border border-[var(--secondary)]/10 dark:border-gray-700 shadow-sm card-hover">
                     {/* Replace with actual project images when available */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-90`}>
-                      <div className="absolute inset-0 bg-[url('/images/subtle-pattern.svg')] bg-repeat opacity-10"></div>
+                      <div className="absolute inset-0 bg-[url('/images/subtle-nature-pattern.svg')] bg-repeat opacity-10"></div>
                       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
                         <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mb-4">
                           {project.icon}

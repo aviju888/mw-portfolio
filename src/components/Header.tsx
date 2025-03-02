@@ -24,12 +24,12 @@ const Header = () => {
     { href: '#research', label: 'Research' },
     { href: '#education', label: 'Education' },
     { href: '#skills', label: 'Skills' },
-    { href: '#publications', label: 'Publications' },
+    { href: '#projects-papers', label: 'Projects & Papers' },
     { href: '#contact', label: 'Contact' },
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 dark:bg-[#121212]/90 backdrop-blur-sm shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-sm shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container-custom flex justify-between items-center">
         <Link href="/" className="font-bold text-xl md:text-2xl text-[var(--primary)] font-merriweather">
           <span className="font-light">Berkeley</span> <span className="font-bold">Microbiology</span>
@@ -65,7 +65,7 @@ const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white dark:bg-[#121212] shadow-md"
+            className="md:hidden bg-white shadow-md"
           >
             <nav className="container-custom py-4 flex flex-col space-y-3">
               {navLinks.map((link) => (
