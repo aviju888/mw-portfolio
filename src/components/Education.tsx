@@ -26,7 +26,18 @@ const Education = () => {
       period: "2020-2024",
       details: "Bachelor of Science in Microbial Biology with a 3.814 GPA. Specializing in multidisciplinary courses in chemistry, physics, and biology, as well as coding applications in bioengineering.",
       icon: <FaGraduationCap className="w-5 h-5" />,
-      color: "bg-[var(--secondary)]"
+      color: "bg-[var(--secondary)]",
+      url: ""
+    },
+    {
+      type: "work",
+      title: "Bioconjugation Intern",
+      institution: "Biotium",
+      period: "2023-2024",
+      details: "Produced and purified bioconjugates for research and diagnostic applications. Performed quality control testing and assisted in developing new bioconjugation protocols.",
+      icon: <FaFlask className="w-5 h-5" />,
+      color: "bg-[var(--brightest)]",
+      url: ""
     },
     {
       type: "work",
@@ -35,25 +46,8 @@ const Education = () => {
       period: "2022-2024",
       details: "Conducted research on algal photosynthesis, developed laboratory protocols, and assisted in data collection and analysis for various projects.",
       icon: <FaFlask className="w-5 h-5" />,
-      color: "bg-[var(--accent)]"
-    },
-    {
-      type: "work",
-      title: "Computer Science Academic Intern",
-      institution: "CS10, UC Berkeley",
-      period: "June 2021 - May 2022",
-      details: "Mentored 20+ students in 4hr coding lab sections, providing guidance on assignments and projects. Taught Python programming and troubleshooted coding issues, helping students achieve understanding and completion of assignments.",
-      icon: <FaChalkboardTeacher className="w-5 h-5" />,
-      color: "bg-[var(--brightest)]"
-    },
-    {
-      type: "work",
-      title: "Biology Lab Intern",
-      institution: "Bio1AL, UC Berkeley",
-      period: "January 2022 - May 2022",
-      details: "Arranged and assisted lab experiments for 25+ students in weekly 3hr lab sections. Performed lab assignments accurately in half the allotted time through efficient time management and professional scientific techniques.",
-      icon: <FaFlask className="w-5 h-5" />,
-      color: "bg-[var(--highlight)]"
+      color: "bg-[var(--accent)]",
+      url: "https://niyogilab.berkeley.edu/"
     },
     {
       type: "work",
@@ -62,16 +56,38 @@ const Education = () => {
       period: "2023-2024",
       details: "Led a tech team of 5 members responsible for video production, editing, and digital content creation for campus events and performances.",
       icon: <FaBriefcase className="w-5 h-5" />,
-      color: "bg-[var(--highlight)]"
+      color: "bg-[var(--highlight)]",
+      url: "https://www.youtube.com/channel/UChvWutuKGAvyALW_fWDNfXg"
     },
     {
-      type: "education",
-      title: "Teaching Assistant",
-      institution: "Department of Bioengineering, UC Berkeley",
-      period: "2023-2024",
-      details: "Assisted professors with course materials, led discussion sections, and provided one-on-one tutoring for undergraduate bioengineering students.",
+      type: "work",
+      title: "Marketing Director",
+      institution: "Glamity at Cal",
+      period: "2022-2023",
+      details: "Managed social media presence and marketing campaigns for the campus organization. Created digital content and coordinated promotional events.",
+      icon: <FaBriefcase className="w-5 h-5" />,
+      color: "bg-[var(--accent)]",
+      url: "https://www.instagram.com/glamityatcal/"
+    },
+    {
+      type: "work",
+      title: "Computer Science Academic Intern",
+      institution: "CS10, UC Berkeley",
+      period: "June 2021 - May 2022",
+      details: "Mentored 20+ students in 4hr coding lab sections, providing guidance on assignments and projects. Taught Python programming and troubleshooted coding issues, helping students achieve understanding and completion of assignments.",
       icon: <FaChalkboardTeacher className="w-5 h-5" />,
-      color: "bg-[var(--brightest)]"
+      color: "bg-[var(--brightest)]",
+      url: "https://cs10.org/sp22/"
+    },
+    {
+      type: "work",
+      title: "Biology Lab Intern",
+      institution: "Bio1AL, UC Berkeley",
+      period: "January 2022 - May 2022",
+      details: "Arranged and assisted lab experiments for 25+ students in weekly 3hr lab sections. Performed lab assignments accurately in half the allotted time through efficient time management and professional scientific techniques.",
+      icon: <FaFlask className="w-5 h-5" />,
+      color: "bg-[var(--highlight)]",
+      url: ""
     }
   ];
 
@@ -129,7 +145,18 @@ const Education = () => {
                     <div>
                       <h4 className="text-xl font-bold text-[var(--secondary)]">{exp.title}</h4>
                       <div className="text-[var(--accent)] mb-1">
-                        {exp.institution}
+                        {exp.url ? (
+                          <a 
+                            href={exp.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="hover:underline"
+                          >
+                            {exp.institution}
+                          </a>
+                        ) : (
+                          exp.institution
+                        )}
                       </div>
                       <div className="text-sm text-[var(--text-color)] mb-3 font-medium">
                         {exp.period}

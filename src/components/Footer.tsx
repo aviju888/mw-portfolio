@@ -1,6 +1,6 @@
 'use client';
 
-import { FaLinkedin, FaGoogle } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -13,14 +13,14 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 text-white">Monica Wang</h3>
             <p className="text-white mb-4">
-              Microbial Biology | UC Berkeley
+              UC Berkeley | Microbial Biology
             </p>
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/in/monicaqwang/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--brightest)] transition-colors">
                 <FaLinkedin size={20} />
               </a>
               <a href="mailto:moniwang9242@gmail.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--brightest)] transition-colors">
-                <FaGoogle size={20} />
+                <FaEnvelope size={20} />
               </a>
             </div>
           </div>
@@ -59,9 +59,18 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 text-white">Contact Info</h3>
             <address className="not-italic text-white space-y-2">
-              <p>Lafayette, CA</p>
-              <p className="mt-2">Email: moniwang9242@gmail.com</p>
-              <p>Phone: (925) 878-2788</p>
+              <p>Email: <a href="mailto:moniwang9242@gmail.com" className="hover:text-[var(--brightest)] transition-colors">moniwang9242@gmail.com</a></p>
+              <p className="mt-2">Phone: <a href="tel:9258782788" className="hover:text-[var(--brightest)] transition-colors">(925) 878-2788</a></p>
+              <p className="mt-2">
+                LinkedIn: <a 
+                  href="https://www.linkedin.com/in/monicaqwang/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-[var(--brightest)] transition-colors"
+                >
+                  monicaqwang
+                </a>
+              </p>
             </address>
           </div>
         </div>

@@ -1,8 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaPhone, FaLinkedin } from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
+import { FaPhone, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
   const fadeIn = {
@@ -16,18 +15,11 @@ const Contact = () => {
 
   const contactItems = [
     {
-      icon: <MdEmail size={22} />,
+      icon: <FaEnvelope size={20} />,
       label: "Email",
       value: "moniwang9242@gmail.com",
       link: "mailto:moniwang9242@gmail.com",
       gradient: "from-[var(--secondary)] to-[var(--accent)]"
-    },
-    {
-      icon: <FaMapMarkerAlt size={20} />,
-      label: "Location",
-      value: "Lafayette, CA",
-      link: null,
-      gradient: "from-[var(--accent)] to-[var(--highlight)]"
     },
     {
       icon: <FaPhone size={20} />,
@@ -35,6 +27,13 @@ const Contact = () => {
       value: "(925) 878-2788",
       link: "tel:9258782788",
       gradient: "from-[var(--highlight)] to-[var(--secondary)]"
+    },
+    {
+      icon: <FaLinkedin size={20} />,
+      label: "LinkedIn",
+      value: "monicaqwang",
+      link: "https://www.linkedin.com/in/monicaqwang/",
+      gradient: "from-[var(--accent)] to-[var(--highlight)]"
     }
   ];
 
@@ -97,21 +96,6 @@ const Contact = () => {
                     </div>
                   </div>
                 ))}
-              </div>
-              
-              <div className="mt-10 pt-6 border-t border-gray-100 dark:border-gray-700 text-center">
-                <h4 className="font-semibold mb-4 text-[var(--heading-color)]">
-                  Connect on LinkedIn
-                </h4>
-                <a 
-                  href="https://www.linkedin.com/in/monicaqwang/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-[var(--secondary)] hover:bg-[var(--accent)] text-white rounded-lg shadow-sm hover:shadow-md transition-all"
-                >
-                  <FaLinkedin size={18} />
-                  <span>Monica Wang</span>
-                </a>
               </div>
             </div>
           </motion.div>

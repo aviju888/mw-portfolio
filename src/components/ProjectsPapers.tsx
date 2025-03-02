@@ -183,23 +183,8 @@ const ProjectsPapers = () => {
               variants={fadeIn}
               className="relative"
             >
-              {/* Paper preview thumbnail that sticks out */}
-              <div className="absolute -left-4 sm:-left-8 top-1/2 transform -translate-y-1/2 w-16 h-20 sm:w-24 sm:h-32 z-10 shadow-md rounded-md overflow-hidden border-2 border-white transition-transform group-hover:scale-105">
-                <a href={item.pdf} target="_blank" rel="noopener noreferrer">
-                  <div className="relative w-full h-full">
-                    <Image 
-                      src={item.thumbnail} 
-                      alt={`Preview of ${item.title}`} 
-                      fill
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-10 transition-all"></div>
-                  </div>
-                </a>
-              </div>
-              
               {/* Main content card */}
-              <div className="bg-white border border-gray-100 p-6 pl-16 sm:pl-20 rounded-lg shadow-sm hover:shadow-md transition-shadow group">
+              <div className="bg-white border border-gray-100 p-6 md:p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow group">
                 <div className="flex items-start gap-4">
                   <div className="pt-1 flex-shrink-0">
                     <span className="inline-flex items-center justify-center w-10 h-10 rounded-full text-white bg-[var(--secondary)]">
@@ -214,34 +199,53 @@ const ProjectsPapers = () => {
                       </span>
                     </div>
                     
-                    <p className="text-[var(--text-color)] mb-3">{item.description}</p>
-                    
-                    <p className="text-[var(--text-color)] mb-1"><strong>Authors:</strong> {item.authors}</p>
-                    <p className="text-[var(--text-color)] mb-3">
-                      <strong>{item.journal}</strong>, {item.year} | <span className="font-medium text-[var(--accent)]">{item.status}</span>
-                    </p>
-                    
-                    <div className="mt-3 flex flex-wrap gap-3">
-                      {item.url && (
-                        <a 
-                          href={item.url} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center text-sm text-[var(--secondary)] hover:underline"
-                        >
-                          <FaLink className="mr-1" /> Publisher Link <FaExternalLinkAlt size={12} className="ml-1" />
+                    <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+                      <div className="flex-1">
+                        <p className="text-[var(--text-color)] mb-3">{item.description}</p>
+                        
+                        <p className="text-[var(--text-color)] mb-1"><strong>Authors:</strong> {item.authors}</p>
+                        <p className="text-[var(--text-color)] mb-3">
+                          <strong>{item.journal}</strong>, {item.year} | <span className="font-medium text-[var(--accent)]">{item.status}</span>
+                        </p>
+                        
+                        <div className="mt-3 flex flex-wrap gap-3">
+                          {item.url && (
+                            <a 
+                              href={item.url} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center text-sm text-[var(--secondary)] hover:underline"
+                            >
+                              <FaLink className="mr-1" /> Publisher Link <FaExternalLinkAlt size={12} className="ml-1" />
+                            </a>
+                          )}
+                          {item.pdf && (
+                            <a 
+                              href={item.pdf} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center text-sm text-[var(--secondary)] hover:underline"
+                            >
+                              <FaFilePdf className="mr-1" /> View Document <FaExternalLinkAlt size={12} className="ml-1" />
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                      
+                      {/* Paper preview thumbnail on the right */}
+                      <div className="flex-shrink-0 w-32 h-44 md:w-48 md:h-64 shadow-lg rounded-md overflow-hidden border border-gray-200 transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl mx-auto md:mx-0">
+                        <a href={item.pdf} target="_blank" rel="noopener noreferrer" className="block relative w-full h-full group/preview">
+                          <div className="relative w-full h-full">
+                            <Image 
+                              src={item.thumbnail} 
+                              alt={`Preview of ${item.title}`} 
+                              fill
+                              className="object-cover"
+                            />
+                            <div className="absolute inset-0 bg-transparent group-hover/preview:bg-[var(--secondary)]/30 transition-all duration-300"></div>
+                          </div>
                         </a>
-                      )}
-                      {item.pdf && (
-                        <a 
-                          href={item.pdf} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center text-sm text-[var(--secondary)] hover:underline"
-                        >
-                          <FaFilePdf className="mr-1" /> View Document <FaExternalLinkAlt size={12} className="ml-1" />
-                        </a>
-                      )}
+                      </div>
                     </div>
                   </div>
                 </div>
