@@ -105,20 +105,6 @@ const ProjectsPapers = () => {
       icon: <FaLeaf className="w-5 h-5" />,
       thumbnail: "/images/paper-previews/espm-report.svg"
     },
-    {
-      title: "MCB 140L Final Report: Investigating the Role of Ras Signaling in Drosophila Eye Development",
-      description: "Investigated the role of Ras signaling in Drosophila melanogaster eye development using genetic crosses and microscopy techniques. Demonstrated that constitutively active Ras leads to overgrowth and disruption of ommatidial patterning.",
-      authors: "Monica Wang and Jared Patel",
-      journal: "MCB 140L Final Report, UC Berkeley",
-      year: "2023",
-      type: "paper",
-      category: "Lab Report",
-      status: "Completed",
-      url: "",
-      pdf: "/papers/MCB 140L Final Report.pdf",
-      icon: <FaFlask className="w-5 h-5" />,
-      thumbnail: "/images/paper-previews/mcb-report.svg"
-    },
   ];
 
   const filteredItems = activeTab === 'all' 

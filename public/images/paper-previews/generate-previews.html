@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paper Preview Generator</title>
+  <title>PDF Preview Generator</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -24,201 +24,210 @@
       padding: 20px;
       position: relative;
       overflow: hidden;
-    }
-    .preview::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(135deg, rgba(13,91,17,0.05) 0%, rgba(13,91,17,0.1) 100%);
+      font-family: 'Times New Roman', Times, serif;
     }
     .title {
       font-size: 14px;
       font-weight: bold;
-      margin-bottom: 10px;
-      color: #0D5B11;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .authors {
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+    .abstract-heading {
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    .abstract {
+      font-size: 10px;
+      text-align: justify;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+    .section-heading {
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 5px;
     }
     .content {
       font-size: 10px;
-      color: #666;
+      text-align: justify;
       line-height: 1.4;
     }
     .watermark {
       position: absolute;
       bottom: 10px;
       right: 10px;
-      font-size: 12px;
-      color: #0D5B11;
-      opacity: 0.5;
+      font-size: 10px;
+      color: #999;
     }
-    .icon {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      width: 24px;
-      height: 24px;
-      background-color: #0D5B11;
-      border-radius: 50%;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8px;
+      color: #999;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #eee;
+    }
+    .figure {
+      margin: 10px 0;
+      border: 1px solid #eee;
+      padding: 5px;
+    }
+    .figure-content {
+      height: 60px;
+      background-color: #f9f9f9;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
-      font-size: 12px;
+      font-size: 20px;
+      color: #ccc;
     }
-    .lines {
-      margin-top: 20px;
+    .figure-caption {
+      font-size: 8px;
+      text-align: center;
+      margin-top: 5px;
     }
-    .line {
-      height: 8px;
-      background-color: #eee;
-      margin-bottom: 8px;
-      border-radius: 4px;
-    }
-    .line.short {
-      width: 60%;
-    }
-    .line.medium {
-      width: 80%;
-    }
-    .line.long {
-      width: 100%;
-    }
-    .chart {
-      margin-top: 30px;
-      height: 100px;
-      background-color: #f0f8f0;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      position: relative;
-      overflow: hidden;
-    }
-    .chart::after {
-      content: "";
+    .page-number {
       position: absolute;
-      top: 0;
+      bottom: 10px;
       left: 0;
-      width: 100%;
-      height: 100%;
-      background: repeating-linear-gradient(
-        45deg,
-        rgba(13,91,17,0.05),
-        rgba(13,91,17,0.05) 10px,
-        rgba(13,91,17,0.08) 10px,
-        rgba(13,91,17,0.08) 20px
-      );
-    }
-    .bar {
-      position: absolute;
-      bottom: 0;
-      width: 15px;
-      background-color: #0D5B11;
-      opacity: 0.7;
-    }
-    .bar1 { left: 20px; height: 60%; }
-    .bar2 { left: 45px; height: 80%; }
-    .bar3 { left: 70px; height: 40%; }
-    .bar4 { left: 95px; height: 70%; }
-    .bar5 { left: 120px; height: 50%; }
-    .image {
-      margin-top: 20px;
-      height: 80px;
-      background-color: #f0f8f0;
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #0D5B11;
-      font-size: 24px;
-      opacity: 0.5;
+      right: 0;
+      text-align: center;
+      font-size: 10px;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <h1>Paper Preview Generator</h1>
+  <h1>PDF Preview Generator</h1>
   <p>Take screenshots of these previews to use as thumbnails for the papers section.</p>
   
   <div class="preview-container">
     <!-- Lab Term Project Report -->
     <div class="preview" id="lab-term-project">
-      <div class="icon">L</div>
+      <div class="header">
+        <div>Biology of Algae Laboratory</div>
+        <div>UC Berkeley, 2024</div>
+      </div>
       <div class="title">Gene Knockout Analysis in Nannochloropsis oceanica</div>
+      <div class="authors">Monica Wang</div>
+      <div class="abstract-heading">Abstract</div>
+      <div class="abstract">
+        This study examined the effects of CRISPR-induced knockouts of algaenan biosynthesis genes (PRX and COPOX) in Nannochloropsis oceanica. Despite contamination issues with wild-type strains, the project provided insights into gene function and algaenan formation.
+      </div>
+      <div class="section-heading">Introduction</div>
       <div class="content">
-        Examined the effects of CRISPR-induced knockouts of algaenan biosynthesis genes (PRX and COPOX) in Nannochloropsis oceanica.
+        Nannochloropsis oceanica is a marine microalga with significant potential for biofuel production due to its high lipid content. The cell wall of N. oceanica contains algaenan, a biopolymer that contributes to its recalcitrance to extraction processes...
       </div>
-      <div class="lines">
-        <div class="line long"></div>
-        <div class="line medium"></div>
-        <div class="line short"></div>
-        <div class="line medium"></div>
+      <div class="figure">
+        <div class="figure-content">🧬</div>
+        <div class="figure-caption">Figure 1: CRISPR-Cas9 targeting of PRX and COPOX genes in N. oceanica</div>
       </div>
-      <div class="image">🧬</div>
+      <div class="page-number">1</div>
       <div class="watermark">UC Berkeley</div>
     </div>
     
     <!-- 134L Final Report -->
     <div class="preview" id="134l-report">
-      <div class="icon">I</div>
+      <div class="header">
+        <div>Practical Genomics IB 134L</div>
+        <div>UC Berkeley, 2023</div>
+      </div>
       <div class="title">Global Circulation Patterns of Influenza A Virulence Gene Mutations</div>
+      <div class="authors">Mari Torii-Karch, Monica Wang, and Anna Kroskrity</div>
+      <div class="abstract-heading">Abstract</div>
+      <div class="abstract">
+        This study analyzed global mutation patterns in the HA and NA genes of Influenza A H3N2 to assess co‐evolution and evolutionary rates. We employed multiple sequence alignment, phylogenetic tree construction, and statistical analysis (ANCOVA) to compare temporal versus regional mutation trends.
+      </div>
+      <div class="section-heading">Introduction</div>
       <div class="content">
-        Analyzed global mutation patterns in the HA and NA genes of Influenza A H3N2 to assess co‐evolution and evolutionary rates.
+        Influenza A viruses are responsible for seasonal epidemics and occasional pandemics, causing significant morbidity and mortality worldwide. The hemagglutinin (HA) and neuraminidase (NA) surface glycoproteins are primary targets of the host immune response...
       </div>
-      <div class="chart">
-        <div class="bar bar1"></div>
-        <div class="bar bar2"></div>
-        <div class="bar bar3"></div>
-        <div class="bar bar4"></div>
-        <div class="bar bar5"></div>
+      <div class="figure">
+        <div class="figure-content">📊</div>
+        <div class="figure-caption">Figure 1: Phylogenetic tree of global H3N2 isolates (2010-2022)</div>
       </div>
+      <div class="page-number">1</div>
       <div class="watermark">UC Berkeley</div>
     </div>
     
     <!-- E. coli Physiology Lab Report -->
     <div class="preview" id="ecoli-report">
-      <div class="icon">E</div>
+      <div class="header">
+        <div>General Microbiology Laboratory</div>
+        <div>UC Berkeley, 2023</div>
+      </div>
       <div class="title">E. coli Physiology: Regulation of Glucose and Galactose Metabolism</div>
+      <div class="authors">Monica Wang and Barbie Peters</div>
+      <div class="abstract-heading">Abstract</div>
+      <div class="abstract">
+        This study investigated the roles of galR, galS, and galK in regulating galactose metabolism in E. coli. Growth curves and Biolog assays demonstrated that galR and galK are essential for proper galactose utilization, while galS appears non-essential.
+      </div>
+      <div class="section-heading">Introduction</div>
       <div class="content">
-        Investigated the roles of galR, galS, and galK in regulating galactose metabolism in E. coli.
+        Escherichia coli is a model organism for studying bacterial metabolism and gene regulation. The galactose operon in E. coli is a classic example of gene regulation, where the expression of genes involved in galactose metabolism is controlled by regulatory proteins...
       </div>
-      <div class="lines">
-        <div class="line long"></div>
-        <div class="line medium"></div>
-        <div class="line short"></div>
+      <div class="figure">
+        <div class="figure-content">🦠</div>
+        <div class="figure-caption">Figure 1: Growth curves of wild-type and mutant E. coli strains</div>
       </div>
-      <div class="image">🦠</div>
+      <div class="page-number">1</div>
       <div class="watermark">UC Berkeley</div>
     </div>
     
     <!-- PLANTBI 185 Forensic Project -->
     <div class="preview" id="plantbi-report">
-      <div class="icon">M</div>
-      <div class="title">Identifying Unknown Powder Components Using Microscopy</div>
+      <div class="header">
+        <div>PLANTBI 185 Forensic Project</div>
+        <div>UC Berkeley, 2023</div>
+      </div>
+      <div class="title">Identifying Unknown Powder Components Using Microscopy Techniques</div>
+      <div class="authors">Monica Wang</div>
+      <div class="abstract-heading">Abstract</div>
+      <div class="abstract">
+        This forensic analysis utilized a suite of microscopy techniques—including brightfield, polarized light, phase contrast, and epifluorescence—to determine that the unknown powder sample consisted of cellulose, cotton fibers, and yeast cells.
+      </div>
+      <div class="section-heading">Introduction</div>
       <div class="content">
-        Utilized microscopy techniques to determine that the unknown powder sample consisted of cellulose, cotton fibers, and yeast.
+        Microscopy techniques are essential tools in forensic science for the identification of unknown substances. This project applied multiple complementary microscopy methods to characterize an unknown powder sample provided for analysis...
       </div>
-      <div class="lines">
-        <div class="line long"></div>
-        <div class="line medium"></div>
-        <div class="line short"></div>
+      <div class="figure">
+        <div class="figure-content">🔬</div>
+        <div class="figure-caption">Figure 1: Brightfield and polarized light micrographs of unknown powder</div>
       </div>
-      <div class="image">🔬</div>
+      <div class="page-number">1</div>
       <div class="watermark">UC Berkeley</div>
     </div>
     
     <!-- ESPM 186 Final Paper -->
     <div class="preview" id="espm-report">
-      <div class="icon">P</div>
-      <div class="title">Chancellor and Koshland Pastures' 3-year Management Plan</div>
+      <div class="header">
+        <div>ESPM 186 Final Paper</div>
+        <div>UC Berkeley, 2022</div>
+      </div>
+      <div class="title">Chancellor and Koshland Pastures' 3-year Management Plan Proposal</div>
+      <div class="authors">Lynn Huntsinger</div>
+      <div class="abstract-heading">Abstract</div>
+      <div class="abstract">
+        This proposal outlines a comprehensive grazing and burning management plan for the Chancellor and Koshland pastures at UC Berkeley. The plan focuses on using domestic livestock grazing to reduce invasive woody species and controlled burnings to lower fire risk.
+      </div>
+      <div class="section-heading">Introduction</div>
       <div class="content">
-        Outlined a comprehensive grazing and burning management plan for the Chancellor and Koshland pastures at UC Berkeley.
+        The Chancellor and Koshland pastures represent important ecological and educational resources for UC Berkeley. Proper management of these areas is essential for maintaining biodiversity, reducing fire hazards, and supporting research and teaching activities...
       </div>
-      <div class="lines">
-        <div class="line long"></div>
-        <div class="line medium"></div>
-        <div class="line short"></div>
+      <div class="figure">
+        <div class="figure-content">🌿</div>
+        <div class="figure-caption">Figure 1: Map of Chancellor and Koshland pastures with management zones</div>
       </div>
-      <div class="image">🌿</div>
+      <div class="page-number">1</div>
       <div class="watermark">UC Berkeley</div>
     </div>
   </div>
