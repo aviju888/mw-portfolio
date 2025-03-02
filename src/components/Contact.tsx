@@ -1,43 +1,9 @@
 'use client';
 
-import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaLinkedin, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-  
-  const [submitted, setSubmitted] = useState(false);
-  
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-  
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically send the form data to your backend or email service
-    console.log(formData);
-    setSubmitted(true);
-    // Clear form after submission
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-    
-    // Reset submission status after 5 seconds
-    setTimeout(() => {
-      setSubmitted(false);
-    }, 5000);
-  };
-  
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
@@ -73,20 +39,19 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+        <div className="max-w-3xl mx-auto">
           <motion.div 
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeIn}
-            className="lg:col-span-2"
           >
             <div className="card card-hover backdrop-blur-sm h-full border border-[var(--secondary)]/10">
               <h3 className="text-xl font-bold mb-8 text-[var(--secondary)] pb-2 border-b border-gray-100 dark:border-gray-700">
                 Get In Touch
               </h3>
               
-              <div className="space-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="flex items-start">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--secondary)] to-[var(--accent)] text-white flex items-center justify-center shadow-sm mr-4">
                     <FaEnvelope size={20} />
@@ -128,7 +93,7 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="mt-10 pt-6 border-t border-gray-100 dark:border-gray-700">
+              <div className="mt-10 pt-6 border-t border-gray-100 dark:border-gray-700 text-center">
                 <h4 className="font-semibold mb-4 text-[var(--heading-color)]">
                   Connect on LinkedIn
                 </h4>
@@ -142,101 +107,6 @@ const Contact = () => {
                   <span>Monica Wang</span>
                 </a>
               </div>
-            </div>
-          </motion.div>
-          
-          <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeIn}
-            className="lg:col-span-3"
-          >
-            <div className="card card-hover backdrop-blur-sm border border-[var(--secondary)]/10">
-              <h3 className="text-xl font-bold mb-8 text-[var(--secondary)] pb-2 border-b border-gray-100 dark:border-gray-700">
-                Send a Message
-              </h3>
-              
-              {submitted ? (
-                <div className="bg-[var(--secondary)]/10 dark:bg-[var(--secondary)]/20 border border-[var(--secondary)]/20 dark:border-[var(--secondary)]/30 text-[var(--secondary)] px-5 py-4 rounded-lg mb-6 flex items-center">
-                  <span className="w-8 h-8 bg-[var(--secondary)]/20 dark:bg-[var(--secondary)]/30 text-[var(--secondary)] rounded-full flex items-center justify-center mr-3">
-                    <FaEnvelope size={14} />
-                  </span>
-                  <p>Thank you for your message! I&apos;ll get back to you soon.</p>
-                </div>
-              ) : null}
-              
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <div>
-                    <label htmlFor="name" className="block mb-2 text-[var(--text-color)] font-medium">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--secondary)] focus:border-transparent bg-gray-50 dark:bg-gray-800 text-[var(--text-color)]"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="email" className="block mb-2 text-[var(--text-color)] font-medium">Email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--secondary)] focus:border-transparent bg-gray-50 dark:bg-gray-800 text-[var(--text-color)]"
-                      placeholder="Your email address"
-                    />
-                  </div>
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block mb-2 text-[var(--text-color)] font-medium">Subject</label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--secondary)] focus:border-transparent bg-gray-50 dark:bg-gray-800 text-[var(--text-color)]"
-                  >
-                    <option value="">Select a subject</option>
-                    <option value="Job Opportunity">Job Opportunity</option>
-                    <option value="Research Collaboration">Research Collaboration</option>
-                    <option value="General Inquiry">General Inquiry</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block mb-2 text-[var(--text-color)] font-medium">Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--secondary)] focus:border-transparent bg-gray-50 dark:bg-gray-800 text-[var(--text-color)]"
-                    placeholder="Your message"
-                  ></textarea>
-                </div>
-                
-                <button 
-                  type="submit" 
-                  className="w-full py-3 px-6 bg-[var(--secondary)] hover:bg-[var(--accent)] text-white rounded-lg shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2"
-                >
-                  <FaPaperPlane size={16} />
-                  <span>Send Message</span>
-                </button>
-              </form>
             </div>
           </motion.div>
         </div>
