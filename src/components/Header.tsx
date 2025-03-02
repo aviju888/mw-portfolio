@@ -32,7 +32,7 @@ const Header = () => {
     <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-sm shadow-md py-2 sm:py-3' : 'bg-transparent py-3 sm:py-5'}`}>
       <div className="container-custom flex justify-between items-center">
         <Link href="/" className="font-bold text-lg sm:text-xl md:text-2xl text-[var(--secondary)] font-merriweather">
-          <span className="font-light">Berkeley</span> <span className="font-bold">Microbiology</span>
+          <span className="font-light">MW</span> <span className="font-bold"></span>
         </Link>
 
         {/* Desktop Navigation */}
