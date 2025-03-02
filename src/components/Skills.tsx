@@ -52,21 +52,6 @@ const Skills = () => {
       color: "from-[var(--accent)] to-[var(--highlight)]"
     },
     {
-      title: "Research Competencies",
-      icon: <FaMicroscope className="w-6 h-6" />,
-      skills: [
-        "Experimental Design",
-        "Scientific Literature Review",
-        "Protocol Optimization",
-        "Data Interpretation",
-        "Research Documentation",
-        "Quantitative Analysis",
-        "Method Development",
-        "Troubleshooting"
-      ],
-      color: "from-[var(--highlight)] to-[var(--secondary)]"
-    },
-    {
       title: "Teaching & Communication",
       icon: <FaChalkboardTeacher className="w-6 h-6" />,
       skills: [
@@ -79,37 +64,7 @@ const Skills = () => {
         "Public Speaking",
         "Documentation"
       ],
-      color: "from-[var(--secondary)] to-[var(--highlight)]"
-    },
-    {
-      title: "Leadership & Teamwork",
-      icon: <FaUsers className="w-6 h-6" />,
-      skills: [
-        "Team Coordination",
-        "Project Management",
-        "Stakeholder Communication",
-        "Strategic Planning",
-        "Conflict Resolution",
-        "Training & Development",
-        "Meeting Facilitation",
-        "Collaborative Research"
-      ],
-      color: "from-[var(--secondary)] to-[var(--accent)]"
-    },
-    {
-      title: "Professional Development",
-      icon: <FaFileAlt className="w-6 h-6" />,
-      skills: [
-        "Grant Writing",
-        "Regulatory Compliance",
-        "Laboratory Safety",
-        "Research Ethics",
-        "Quality Assurance",
-        "Scientific Publishing",
-        "Conference Participation",
-        "Networking"
-      ],
-      color: "from-[var(--accent)] to-[var(--secondary)]"
+      color: "from-[var(--highlight)] to-[var(--secondary)]"
     }
   ];
 

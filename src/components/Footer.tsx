@@ -11,18 +11,15 @@ const Footer = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <h3 className="text-xl font-bold mb-4">Your Name</h3>
-            <p className="text-gray-200 mb-4">
-              Microbiology Researcher | UC Berkeley
+            <h3 className="text-xl font-bold mb-4">Monica Wang</h3>
+            <p className="text-white mb-4">
+              Microbial Biology | UC Berkeley
             </p>
             <div className="flex space-x-4">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--brightest)] transition-colors">
+              <a href="https://www.linkedin.com/in/monicaqwang/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--brightest)] transition-colors">
                 <FaLinkedin size={20} />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--brightest)] transition-colors">
-                <FaGithub size={20} />
-              </a>
-              <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--brightest)] transition-colors">
+              <a href="mailto:moniwang9242@gmail.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[var(--brightest)] transition-colors">
                 <FaGoogle size={20} />
               </a>
             </div>
@@ -32,27 +29,27 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-200 hover:text-[var(--brightest)] transition-colors">
+                <Link href="/" className="text-white hover:text-[var(--brightest)] transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="text-gray-200 hover:text-[var(--brightest)] transition-colors">
+                <Link href="#about" className="text-white hover:text-[var(--brightest)] transition-colors">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="#research" className="text-gray-200 hover:text-[var(--brightest)] transition-colors">
+                <Link href="#research" className="text-white hover:text-[var(--brightest)] transition-colors">
                   Research
                 </Link>
               </li>
               <li>
-                <Link href="#projects-papers" className="text-gray-200 hover:text-[var(--brightest)] transition-colors">
+                <Link href="#projects-papers" className="text-white hover:text-[var(--brightest)] transition-colors">
                   Projects & Papers
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-gray-200 hover:text-[var(--brightest)] transition-colors">
+                <Link href="#contact" className="text-white hover:text-[var(--brightest)] transition-colors">
                   Contact
                 </Link>
               </li>
@@ -61,29 +58,19 @@ const Footer = () => {
           
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Info</h3>
-            <address className="not-italic text-gray-200 space-y-2">
-              <p>Department of Microbiology</p>
-              <p>University of California, Berkeley</p>
-              <p>Berkeley, CA 94720</p>
-              <p className="mt-2">Email: your.name@berkeley.edu</p>
-              <p>Phone: (123) 456-7890</p>
+            <address className="not-italic text-white space-y-2">
+              <p>Lafayette, CA</p>
+              <p className="mt-2">Email: moniwang9242@gmail.com</p>
+              <p>Phone: (925) 878-2788</p>
             </address>
           </div>
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300 text-sm">
-            &copy; {currentYear} Your Name. All rights reserved.
+          <p className="text-white text-sm">
+            &copy; {currentYear} Monica Wang. All rights reserved.
           </p>
-          <div className="mt-4 md:mt-0 flex flex-wrap justify-center gap-4 text-sm text-gray-300">
-            <Link href="/privacy-policy" className="hover:text-[var(--brightest)] transition-colors">
-              Privacy Policy
-            </Link>
-            <span>|</span>
-            <Link href="/terms-of-use" className="hover:text-[var(--brightest)] transition-colors">
-              Terms of Use
-            </Link>
-            <span>|</span>
+          <div className="mt-4 md:mt-0 flex flex-wrap justify-center gap-4 text-sm text-white">
             <span>
               Built with <span className="text-[var(--brightest)]">♥</span> using Next.js
             </span>
