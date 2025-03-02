@@ -12,39 +12,15 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[url('/images/subtle-nature-pattern.svg')] bg-repeat opacity-5 z-0"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-        <div className="flex flex-col items-center justify-between gap-4 sm:gap-8 py-8 sm:py-16 md:py-24">
-          {/* Photo - Appears first on mobile */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-            className="flex-shrink-0 mb-6 lg:mb-0 order-first lg:order-last"
-          >
-            <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 overflow-hidden rounded-2xl shadow-xl border-2 border-[var(--secondary)]/20">
-              {/* Replace with actual profile image */}
-              <div className="w-full h-full bg-gradient-to-br from-[var(--secondary)] to-[var(--highlight)] flex items-center justify-center text-white text-4xl sm:text-6xl font-bold">
-                <div className="relative z-10">MW</div>
-              </div>
-              {/* Uncomment when you have an image
-              <Image 
-                src="/images/profile.jpg" 
-                alt="Monica Wang - Microbiology Researcher" 
-                fill
-                className="object-cover"
-              />
-              */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-10"></div>
-            </div>
-          </motion.div>
-          
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 sm:gap-8 py-8 sm:py-16 md:py-24">
           {/* Text content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="flex flex-col max-w-xl w-full lg:order-first"
+            className="flex flex-col max-w-xl w-full order-2 lg:order-1"
           >
-            <div className="inline-flex px-3 py-1 sm:py-1.5 mb-3 sm:mb-5 bg-[var(--secondary)]/10 rounded-full shadow-sm self-start">
+            <div className="inline-flex px-3 py-1 sm:py-1.5 mb-3 sm:mb-5 bg-[var(--secondary)]/10 rounded-full shadow-sm self-center lg:self-start">
               {/* <span className="text-[var(--secondary)] font-semibold text-xs sm:text-sm">Microbial Biology Graduate</span> */}
             </div>
             
@@ -75,6 +51,30 @@ const Hero = () => {
                  className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-[var(--secondary)]/10 text-[var(--secondary)] hover:bg-[var(--secondary)]/20 transition-all">
                 <FaEnvelope size={16} className="sm:text-xl" />
               </a>
+            </div>
+          </motion.div>
+          
+          {/* Photo - Appears first on mobile, second on desktop */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
+            className="flex-shrink-0 mb-6 lg:mb-0 order-1 lg:order-2"
+          >
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 overflow-hidden rounded-2xl shadow-xl border-2 border-[var(--secondary)]/20">
+              {/* Replace with actual profile image */}
+              <div className="w-full h-full bg-gradient-to-br from-[var(--secondary)] to-[var(--highlight)] flex items-center justify-center text-white text-4xl sm:text-6xl font-bold">
+                <div className="relative z-10">MW</div>
+              </div>
+              {/* Uncomment when you have an image
+              <Image 
+                src="/images/profile.jpg" 
+                alt="Monica Wang - Microbiology Researcher" 
+                fill
+                className="object-cover"
+              />
+              */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-10"></div>
             </div>
           </motion.div>
         </div>
