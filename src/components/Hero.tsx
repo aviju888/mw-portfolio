@@ -41,21 +41,7 @@ const Hero = () => {
                 View Research
               </a>
               
-              {/* Social icons - visible on all screens but positioned differently */}
-              <div className="flex items-center gap-3 sm:gap-4">
-                <a href="https://www.linkedin.com/in/monicaqwang/" target="_blank" rel="noopener noreferrer" 
-                   className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-[var(--secondary)]/10 text-[var(--secondary)] hover:bg-[var(--secondary)]/20 transition-all">
-                  <FaLinkedin size={16} className="sm:text-xl" />
-                </a>
-                <a href="mailto:moniwang9242@gmail.com" target="_blank" rel="noopener noreferrer"
-                   className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-[var(--secondary)]/10 text-[var(--secondary)] hover:bg-[var(--secondary)]/20 transition-all">
-                  <FaEnvelope size={16} className="sm:text-xl" />
-                </a>
-              </div>
-            </div>
-            
-            {/* Desktop-only social icons */}
-            <div className="hidden lg:flex items-center gap-3 sm:gap-4 justify-start">
+              {/* Social icons */}
               <a href="https://www.linkedin.com/in/monicaqwang/" target="_blank" rel="noopener noreferrer" 
                  className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-[var(--secondary)]/10 text-[var(--secondary)] hover:bg-[var(--secondary)]/20 transition-all">
                 <FaLinkedin size={16} className="sm:text-xl" />
