@@ -35,21 +35,6 @@ const Education = () => {
     },
     {
       type: "work",
-      title: "Undergraduate Researcher",
-      institution: "Niyogi Lab, PMB, UC Berkeley",
-      period: "August 2022 - May 2024",
-      details: [
-        "Conducted research in the Plant and Microbial Biology department focused on increasing photosynthesis",
-        "Maintained transgenic algae culture lines through laboratory techniques",
-        "Conducted independent experiments from algae transformation to protein expression analysis",
-        "Optimized experimental conditions and protocols to improve data collection and reproducibility"
-      ],
-      icon: <FaFlask className="w-5 h-5" />,
-      color: "bg-[var(--accent)]",
-      url: "https://niyogilab.berkeley.edu/"
-    },
-    {
-      type: "work",
       title: "Tech Team Lead Executive",
       institution: "KOSMOS, UC Berkeley",
       period: "May 2023 - July 2024",
@@ -62,6 +47,21 @@ const Education = () => {
       icon: <FaBriefcase className="w-5 h-5" />,
       color: "bg-[var(--highlight)]",
       url: "https://www.youtube.com/channel/UChvWutuKGAvyALW_fWDNfXg"
+    },
+    {
+      type: "work",
+      title: "Undergraduate Researcher",
+      institution: "Niyogi Lab, PMB, UC Berkeley",
+      period: "August 2022 - May 2024",
+      details: [
+        "Conducted research in the Plant and Microbial Biology department focused on increasing photosynthesis",
+        "Maintained transgenic algae culture lines through laboratory techniques",
+        "Conducted independent experiments from algae transformation to protein expression analysis",
+        "Optimized experimental conditions and protocols to improve data collection and reproducibility"
+      ],
+      icon: <FaFlask className="w-5 h-5" />,
+      color: "bg-[var(--accent)]",
+      url: "https://niyogilab.berkeley.edu/"
     },
     {
       type: "work",
@@ -80,18 +80,18 @@ const Education = () => {
     },
     {
       type: "work",
-      title: "Computer Science Academic Intern",
-      institution: "CS10, UC Berkeley",
-      period: "June 2021 - May 2022",
+      title: "Bioconjugation Intern",
+      institution: "Biotium, Fremont",
+      period: "May 2022 - August 2022",
       details: [
-        "Mentored 20+ students in 4hr coding lab sections",
-        "Provided guidance on assignments and over 15+ projects",
-        "Expertly taught Python code and troubleshooted coding issues",
-        "Helped students achieve understanding and completion of coding assignments"
+        "Executed 3-4 high-yield bioconjugation productions simultaneously",
+        "Utilized strategic planning and chromatographic purification techniques",
+        "Mastered and adapted workflow in 2-weeks and trained 2 fellow interns",
+        "Increased production by ~75% through effective collaboration with supervisors and staff"
       ],
-      icon: <FaChalkboardTeacher className="w-5 h-5" />,
+      icon: <FaFlask className="w-5 h-5" />,
       color: "bg-[var(--brightest)]",
-      url: "https://cs10.org/sp22/"
+      url: ""
     },
     {
       type: "work",
@@ -110,18 +110,18 @@ const Education = () => {
     },
     {
       type: "work",
-      title: "Bioconjugation Intern",
-      institution: "Biotium, Fremont",
-      period: "May 2022 - August 2022",
+      title: "Computer Science Academic Intern",
+      institution: "CS10, UC Berkeley",
+      period: "June 2021 - May 2022",
       details: [
-        "Executed 3-4 high-yield bioconjugation productions simultaneously",
-        "Utilized strategic planning and chromatographic purification techniques",
-        "Mastered and adapted workflow in 2-weeks and trained 2 fellow interns",
-        "Increased production by ~75% through effective collaboration with supervisors and staff"
+        "Mentored 20+ students in 4hr coding lab sections",
+        "Provided guidance on assignments and over 15+ projects",
+        "Expertly taught Python code and troubleshooted coding issues",
+        "Helped students achieve understanding and completion of coding assignments"
       ],
-      icon: <FaFlask className="w-5 h-5" />,
+      icon: <FaChalkboardTeacher className="w-5 h-5" />,
       color: "bg-[var(--brightest)]",
-      url: ""
+      url: "https://cs10.org/sp22/"
     },
     {
       type: "work",
