@@ -29,9 +29,9 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-sm shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-sm shadow-md py-2 sm:py-3' : 'bg-transparent py-3 sm:py-5'}`}>
       <div className="container-custom flex justify-between items-center">
-        <Link href="/" className="font-bold text-xl md:text-2xl text-[var(--secondary)] font-merriweather">
+        <Link href="/" className="font-bold text-lg sm:text-xl md:text-2xl text-[var(--secondary)] font-merriweather">
           <span className="font-light">Berkeley</span> <span className="font-bold">Microbiology</span>
         </Link>
 
@@ -50,11 +50,11 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-[var(--foreground)] p-2"
+          className="md:hidden text-[var(--foreground)] p-1 sm:p-2"
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
-          {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          {isOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
         </button>
       </div>
 
@@ -67,12 +67,12 @@ const Header = () => {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-white shadow-md"
           >
-            <nav className="container-custom py-4 flex flex-col space-y-3">
+            <nav className="container-custom py-2 flex flex-col space-y-2">
               {navLinks.map((link) => (
                 <Link 
                   key={link.label} 
                   href={link.href}
-                  className="text-[var(--foreground)] hover:text-[var(--secondary)] transition-colors font-medium p-2"
+                  className="text-[var(--foreground)] hover:text-[var(--secondary)] transition-colors font-medium py-1.5 px-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}

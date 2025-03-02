@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   title: "Microbiology Portfolio | UC Berkeley",
   description: "Professional portfolio showcasing microbiology research, projects, and academic achievements from UC Berkeley",
   keywords: ["microbiology", "UC Berkeley", "biology", "research", "portfolio", "science"],
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
 };
 
 export default function RootLayout({
