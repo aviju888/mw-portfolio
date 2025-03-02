@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaFilePdf, FaLink, FaExternalLinkAlt, FaBook } from 'react-icons/fa';
+import { FaFilePdf, FaLink, FaExternalLinkAlt, FaBook, FaFlask, FaUsers } from 'react-icons/fa';
 import { useState } from 'react';
 import React from 'react';
 
@@ -33,6 +33,45 @@ const ProjectsPapers = () => {
   };
 
   const items: PaperItem[] = [
+    {
+      title: "Laboratory Term Project: E. coli Physiology Analysis",
+      description: "Conducted comprehensive physiological analysis of E. coli strains under various growth conditions, examining metabolic pathways, growth kinetics, and cellular responses to environmental stressors. Employed microbiological techniques including spectrophotometry, enzyme assays, and growth curve analysis.",
+      authors: "Monica Wang",
+      journal: "Laboratory Term Project Report",
+      year: "2023",
+      type: "paper",
+      category: "Research Paper",
+      status: "Completed",
+      url: "",
+      pdf: "/papers/Laboratory Term Project Report.pdf",
+      icon: <FaFlask className="w-5 h-5" />
+    },
+    {
+      title: "Microbial Analysis of Environmental Samples",
+      description: "Collaborative research project analyzing microbial communities in environmental samples using molecular techniques and culture-based methods. Investigated microbial diversity, abundance, and functional roles in ecosystem processes.",
+      authors: "Mari, Anna, Monica Wang",
+      journal: "134L Final Report",
+      year: "2023",
+      type: "paper",
+      category: "Research Paper",
+      status: "Completed",
+      url: "",
+      pdf: "/papers/134L Final Report - Mari, Anna, Monica.pdf",
+      icon: <FaUsers className="w-5 h-5" />
+    },
+    {
+      title: "E. coli Physiology: Growth and Metabolic Analysis",
+      description: "Detailed investigation of E. coli physiology focusing on growth parameters, metabolic pathways, and cellular responses to varying nutrient conditions. Applied microbiological techniques to characterize bacterial growth kinetics and metabolic activities.",
+      authors: "Monica Wang",
+      journal: "E. coli Physiology Lab Report",
+      year: "2022",
+      type: "paper",
+      category: "Research Paper",
+      status: "Completed",
+      url: "",
+      pdf: "/papers/E. coli Physiology Lab Report - Monica Wang_.pdf",
+      icon: <FaFlask className="w-5 h-5" />
+    },
     {
       title: "Identifying Unknown Components in Powder Sample Using Microscopy Techniques",
       description: "Applied various microscopy techniques including brightfield, polarized light, phase contrast, and epifluorescence microscopy to identify three unknown components (cellulose, cotton fibers, and yeast) in a forensic powder sample, demonstrating practical applications of microscopy in forensic analysis.",

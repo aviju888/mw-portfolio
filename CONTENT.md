@@ -144,7 +144,31 @@ Utilized Google Suite practices to assemble the musical program with all details
 
 ## Projects & Papers
 ### Papers
-1. **Title:** Identifying Unknown Components in Powder Sample Using Microscopy Techniques
+1. **Title:** Laboratory Term Project: E. coli Physiology Analysis
+   - **Authors:** Monica Wang
+   - **Journal/Course:** Laboratory Term Project Report
+   - **Year:** 2023
+   - **Status:** Completed
+   - **Description:** Conducted comprehensive physiological analysis of E. coli strains under various growth conditions, examining metabolic pathways, growth kinetics, and cellular responses to environmental stressors. Employed microbiological techniques including spectrophotometry, enzyme assays, and growth curve analysis.
+   - **File:** /papers/Laboratory Term Project Report.pdf
+
+2. **Title:** Microbial Analysis of Environmental Samples
+   - **Authors:** Mari, Anna, Monica Wang
+   - **Journal/Course:** 134L Final Report
+   - **Year:** 2023
+   - **Status:** Completed
+   - **Description:** Collaborative research project analyzing microbial communities in environmental samples using molecular techniques and culture-based methods. Investigated microbial diversity, abundance, and functional roles in ecosystem processes.
+   - **File:** /papers/134L Final Report - Mari, Anna, Monica.pdf
+
+3. **Title:** E. coli Physiology: Growth and Metabolic Analysis
+   - **Authors:** Monica Wang
+   - **Journal/Course:** E. coli Physiology Lab Report
+   - **Year:** 2022
+   - **Status:** Completed
+   - **Description:** Detailed investigation of E. coli physiology focusing on growth parameters, metabolic pathways, and cellular responses to varying nutrient conditions. Applied microbiological techniques to characterize bacterial growth kinetics and metabolic activities.
+   - **File:** /papers/E. coli Physiology Lab Report - Monica Wang_.pdf
+
+4. **Title:** Identifying Unknown Components in Powder Sample Using Microscopy Techniques
    - **Authors:** Monica Wang
    - **Journal/Course:** PLANTBI 185 Forensic Project
    - **Year:** 2023
@@ -152,13 +176,13 @@ Utilized Google Suite practices to assemble the musical program with all details
    - **Description:** Applied various microscopy techniques including brightfield, polarized light, phase contrast, and epifluorescence microscopy to identify three unknown components (cellulose, cotton fibers, and yeast) in a forensic powder sample, demonstrating practical applications of microscopy in forensic analysis.
    - **File:** /papers/PLANTBI 185 Forensic Project .pdf
 
-2. **Title:** Chancellor and Koshland Pastures' 3-year Management Plan Proposal
+5. **Title:** Chancellor and Koshland Pastures' 3-year Management Plan Proposal
    - **Authors:** Monica Wang
    - **Journal/Course:** ESPM 186 Final Paper
    - **Year:** 2022
    - **Status:** Completed
    - **Description:** Developed a comprehensive 3-year rangeland management plan for UC Berkeley campus pastures, integrating strategic grazing and burning prescriptions to control invasive species, reduce fire hazards, and create educational opportunities for students while maintaining ecological health.
-   - **File:** /papers/ESPM 186 Final Paper - Monica Wang.docx
+   - **File:** /papers/ESPM 186 Final Paper - Monica Wang.pdf
 
 ## Contact Preferences
 - **Preferred Contact Method:** Email (moniwang9242@gmail.com)
