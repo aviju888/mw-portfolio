@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -61,18 +62,13 @@ const Hero = () => {
             className="flex-shrink-0 mb-6 lg:mb-0 order-1 lg:order-2"
           >
             <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 overflow-hidden rounded-2xl shadow-xl border-2 border-[var(--secondary)]/20">
-              {/* Replace with actual profile image */}
-              <div className="w-full h-full bg-gradient-to-br from-[var(--secondary)] to-[var(--highlight)] flex items-center justify-center text-white text-4xl sm:text-6xl font-bold">
-                <div className="relative z-10">MW</div>
-              </div>
-              {/* Uncomment when you have an image
+              {/* Profile image */}
               <Image 
-                src="/images/profile.jpg" 
+                src="/images/mw-headshot.png" 
                 alt="Monica Wang - Microbiology Researcher" 
                 fill
                 className="object-cover"
               />
-              */}
               <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-10"></div>
             </div>
           </motion.div>
