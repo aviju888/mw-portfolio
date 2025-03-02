@@ -59,16 +59,16 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 text-white">Contact Info</h3>
             <address className="not-italic text-white space-y-2">
-              <p>Email: <a href="mailto:moniwang9242@gmail.com" className="hover:text-[var(--brightest)] transition-colors">moniwang9242@gmail.com</a></p>
-              <p className="mt-2">Phone: <a href="tel:9258782788" className="hover:text-[var(--brightest)] transition-colors">(925) 878-2788</a></p>
+              <p>Email: <a href="mailto:moniwang9242@gmail.com" className="text-white hover:text-[var(--brightest)] transition-colors">moniwang9242@gmail.com</a></p>
+              <p className="mt-2">Phone: <a href="tel:9258782788" className="text-white hover:text-[var(--brightest)] transition-colors">(925) 878-2788</a></p>
               <p className="mt-2">
                 LinkedIn: <a 
                   href="https://www.linkedin.com/in/monicaqwang/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-[var(--brightest)] transition-colors"
+                  className="inline-flex items-center bg-white text-[var(--secondary)] hover:bg-[var(--brightest)] hover:text-[var(--secondary)] px-3 py-1 rounded-md font-medium text-sm transition-colors ml-1"
                 >
-                  monicaqwang
+                  <FaLinkedin className="mr-1" /> monicaqwang
                 </a>
               </p>
             </address>
