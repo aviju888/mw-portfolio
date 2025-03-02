@@ -33,16 +33,29 @@ const Hero = () => {
               With my fast-learning and proactive character, drive to exceed baseline expectations, and 2+ years of experience in bioconjugation and research, I am a valuable candidate ready to make an impact.
             </p>
             
-            <div className="flex flex-wrap gap-3 sm:gap-4 mb-4 sm:mb-8 justify-center lg:justify-start">
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-4 sm:mb-8 justify-center lg:justify-start">
               <a href="#contact" className="bg-[var(--secondary)] hover:bg-[var(--accent)] text-white py-2 px-4 sm:py-2.5 sm:px-6 rounded-md transition duration-300 font-medium text-xs sm:text-sm shadow-lg">
                 Get in Touch
               </a>
               <a href="#research" className="bg-white border border-[var(--secondary)] text-[var(--secondary)] py-2 px-4 sm:py-2.5 sm:px-6 rounded-md hover:bg-[var(--secondary)] hover:text-white transition duration-300 font-medium text-xs sm:text-sm shadow-lg">
                 View Research
               </a>
+              
+              {/* Social icons - visible on all screens but positioned differently */}
+              <div className="flex items-center gap-3 sm:gap-4">
+                <a href="https://www.linkedin.com/in/monicaqwang/" target="_blank" rel="noopener noreferrer" 
+                   className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-[var(--secondary)]/10 text-[var(--secondary)] hover:bg-[var(--secondary)]/20 transition-all">
+                  <FaLinkedin size={16} className="sm:text-xl" />
+                </a>
+                <a href="mailto:moniwang9242@gmail.com" target="_blank" rel="noopener noreferrer"
+                   className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-[var(--secondary)]/10 text-[var(--secondary)] hover:bg-[var(--secondary)]/20 transition-all">
+                  <FaEnvelope size={16} className="sm:text-xl" />
+                </a>
+              </div>
             </div>
             
-            <div className="flex items-center gap-3 sm:gap-4 justify-center lg:justify-start">
+            {/* Desktop-only social icons */}
+            <div className="hidden lg:flex items-center gap-3 sm:gap-4 justify-start">
               <a href="https://www.linkedin.com/in/monicaqwang/" target="_blank" rel="noopener noreferrer" 
                  className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-[var(--secondary)]/10 text-[var(--secondary)] hover:bg-[var(--secondary)]/20 transition-all">
                 <FaLinkedin size={16} className="sm:text-xl" />
@@ -79,11 +92,12 @@ const Hero = () => {
           </motion.div>
         </div>
         
+        {/* Scroll indicator - desktop only */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="absolute bottom-4 sm:bottom-8 left-0 right-0 flex justify-center pb-4"
+          className="absolute bottom-4 sm:bottom-8 left-0 right-0 hidden lg:flex justify-center"
         >
           <a 
             href="#about" 
