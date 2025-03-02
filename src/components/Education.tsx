@@ -23,8 +23,8 @@ const Education = () => {
       type: "education",
       title: "Bachelor of Science",
       institution: "University of California, Berkeley",
-      period: "2021-2025",
-      details: "Bachelor of Science in Bioengineering with a 3.9 GPA. Specializing in multidisciplinary courses in chemistry, physics, and biology, as well as coding applications in bioengineering.",
+      period: "2020-2024",
+      details: "Bachelor of Science in Microbial Biology with a 3.814 GPA. Specializing in multidisciplinary courses in chemistry, physics, and biology, as well as coding applications in bioengineering.",
       icon: <FaGraduationCap className="w-5 h-5" />,
       color: "bg-[var(--secondary)]"
     },

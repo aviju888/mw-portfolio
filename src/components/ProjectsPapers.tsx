@@ -47,7 +47,7 @@ const ProjectsPapers = () => {
       icon: <FaBook className="w-5 h-5" />
     },
     {
-      title: "Chancellor and Koshland Pastures' 3-year Management Plan Proposal",
+      title: "Chancellor and Koshland Pastures' 3-year Rangeland Management Plan Proposal",
       description: "Developed a comprehensive 3-year rangeland management plan for UC Berkeley campus pastures, integrating strategic grazing and burning prescriptions to control invasive species, reduce fire hazards, and create educational opportunities for students while maintaining ecological health.",
       authors: "Monica Wang",
       journal: "ESPM 186 Final Paper",
@@ -56,7 +56,7 @@ const ProjectsPapers = () => {
       category: "Policy Analysis",
       status: "Completed",
       url: "",
-      pdf: "/papers/ESPM 186 Final Paper - Monica Wang.docx",
+      pdf: "/papers/ESPM 186 Final Paper - Monica Wang.pdf",
       icon: <FaBook className="w-5 h-5" />
     }
   ];
