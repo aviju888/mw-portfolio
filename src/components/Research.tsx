@@ -23,12 +23,15 @@ const Research = () => {
       shortTitle: "Research",
       subtitle: "Niyogi Lab, PMB, UC Berkeley",
       period: "August 2022 - May 2024",
-      description: "Conducted research in the Plant and Microbial Biology department, focused on developing laboratory techniques and contributing to ongoing research projects.",
+      description: "Conducted research in the Plant and Microbial Biology department, focused on developing laboratory techniques and contributing to ongoing research projects primarily on increasing photosynthesis.",
       highlights: [
-        "Learned and acquired new lab techniques by researching, reading scientific papers, and collaborating with senior scientists",
-        "Maintained clear and timely communication with supervisor via email, phone, and in-person",
-        "Ensured data integrity and replicability through meticulous recording of data and procedures",
-        "Developed concise and informative presentations and written reports to effectively convey research findings to lab team"
+        "Maintained transgenic algae culture lines in liquid and agar plates chambers by preparing solutions and plates, autoclaving labware, streaking 10s of plates within 3hrs",
+        "Conducted independent experiments from algae transformation to protein expression analysis via western blot, progressing research findings and understandings",
+        "Optimized experimental conditions and protocols with guidance from supervisor to improve data collection and reproducibility of growth culture in different light/nutrient conditions",
+        "Reviewed scientific paper and closely collaborated with senior scientists to contribute new ideas and experiments related to the research",
+        "Ensured data accuracy and replicability through meticulous and organized recording of data and procedures",
+        "Compiled and interpreted data to create figures using multiple software applications, improving experimental procedure efficiency and result consistency",
+        "Developed concise, informative presentations and reports to effectively exchange research findings to lab team"
       ],
       image: "/images/research1.jpg",
       icon: <FaFlask size={20} />,
@@ -44,15 +47,17 @@ const Research = () => {
       type: "dual",
       experiences: [
         {
-          title: "Tech Team Leader",
+          title: "Tech Team Leader Executive",
           subtitle: "KOSMOS, UC Berkeley",
           period: "May 2023 - July 2024",
           description: "Led the technical team for KOSMOS, managing filming schedules, video editing, and equipment logistics for a large organization.",
           highlights: [
-            "Orchestrated seamless collaboration and coordination with 40+ individuals managing filming schedules and video production",
+            "Orchestrated seamless collaboration and coordination with 120+ individuals, adeptly managing filming schedules, video editing timelines, equipment logistics, and ensuring cohesive execution of projects",
+            "Designed, organized, and managed multiple documents, Google sheets, etc. to implement a functioning work system for team and accurate documentation and accessibility of all photage-related content",
             "Streamlined organizational efficiency by centralizing and maintaining a comprehensive digital archive",
             "Fostered tech team skill development by designing workshops covering editing, photoshop, and filming techniques",
-            "Recruited club members for Tech Team through digital content and outreach, increasing member numbers by over 400%"
+            "Recruited club members for Tech Team through digital content and outreach, increasing member numbers by over 400%",
+            "Communicated frequently with all sectors of the organization to maintain efficient workflow and collaboration"
           ],
           icon: <FaCode size={20} />,
           color: "from-[var(--accent)] to-[var(--secondary)]"

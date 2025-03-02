@@ -31,40 +31,30 @@ const Education = () => {
     },
     {
       type: "work",
-      title: "Bioconjugation Intern",
-      institution: "Biotium",
-      period: "2023-2024",
-      details: "Produced and purified bioconjugates for research and diagnostic applications. Performed quality control testing and assisted in developing new bioconjugation protocols.",
-      icon: <FaFlask className="w-5 h-5" />,
-      color: "bg-[var(--brightest)]",
-      url: ""
-    },
-    {
-      type: "work",
       title: "Undergraduate Researcher",
-      institution: "Niyogi Lab, UC Berkeley",
-      period: "2022-2024",
-      details: "Conducted research on algal photosynthesis, developed laboratory protocols, and assisted in data collection and analysis for various projects.",
+      institution: "Niyogi Lab, PMB, UC Berkeley",
+      period: "August 2022 - May 2024",
+      details: "Conducted research in the Plant and Microbial Biology department, focused on developing laboratory techniques and contributing to ongoing research projects primarily on increasing photosynthesis. Maintained transgenic algae culture lines, conducted independent experiments, and optimized experimental conditions and protocols.",
       icon: <FaFlask className="w-5 h-5" />,
       color: "bg-[var(--accent)]",
       url: "https://niyogilab.berkeley.edu/"
     },
     {
       type: "work",
-      title: "Tech Team Lead",
+      title: "Tech Team Leader Executive",
       institution: "KOSMOS, UC Berkeley",
-      period: "2023-2024",
-      details: "Led a tech team of 5 members responsible for video production, editing, and digital content creation for campus events and performances.",
+      period: "May 2023 - July 2024",
+      details: "Orchestrated seamless collaboration and coordination with 120+ individuals, managing filming schedules, video editing timelines, equipment logistics, and ensuring cohesive execution of projects. Streamlined organizational efficiency and fostered tech team skill development through workshops.",
       icon: <FaBriefcase className="w-5 h-5" />,
       color: "bg-[var(--highlight)]",
       url: "https://www.youtube.com/channel/UChvWutuKGAvyALW_fWDNfXg"
     },
     {
       type: "work",
-      title: "Marketing Director",
-      institution: "Glamity at Cal",
-      period: "2022-2023",
-      details: "Managed social media presence and marketing campaigns for the campus organization. Created digital content and coordinated promotional events.",
+      title: "Director Intern",
+      institution: "Glamity, UC Berkeley",
+      period: "January 2024 - May 2024",
+      details: "Organized photoshoots, facilitated dance practices by delegating responsibilities, maintained timely schedules, and fostered team spirit. Organized and maintained digital archives for easy member access to team logistics.",
       icon: <FaBriefcase className="w-5 h-5" />,
       color: "bg-[var(--accent)]",
       url: "https://www.instagram.com/glamityatcal/"
@@ -74,7 +64,7 @@ const Education = () => {
       title: "Computer Science Academic Intern",
       institution: "CS10, UC Berkeley",
       period: "June 2021 - May 2022",
-      details: "Mentored 20+ students in 4hr coding lab sections, providing guidance on assignments and projects. Taught Python programming and troubleshooted coding issues, helping students achieve understanding and completion of assignments.",
+      details: "Mentored 20+ students in 4hr coding lab sections, providing guidance on assignments and over 15+ projects. Expertly taught Python code and troubleshooted coding issues, effectively helping students achieve understanding and completion of coding assignments.",
       icon: <FaChalkboardTeacher className="w-5 h-5" />,
       color: "bg-[var(--brightest)]",
       url: "https://cs10.org/sp22/"
@@ -84,9 +74,29 @@ const Education = () => {
       title: "Biology Lab Intern",
       institution: "Bio1AL, UC Berkeley",
       period: "January 2022 - May 2022",
-      details: "Arranged and assisted lab experiments for 25+ students in weekly 3hr lab sections. Performed lab assignments accurately in half the allotted time through efficient time management and professional scientific techniques.",
+      details: "Arranged and assisted lab experiments for 25+ students for 3hr weekly lab section. Performed student's lab assignments accurately in half the allotted time through time management and professional scientific techniques. Facilitated exam logistics for 100+ students.",
       icon: <FaFlask className="w-5 h-5" />,
       color: "bg-[var(--highlight)]",
+      url: ""
+    },
+    {
+      type: "work",
+      title: "Bioconjugation Intern",
+      institution: "Biotium, Fremont",
+      period: "May 2022 - August 2022",
+      details: "Executed 3-4 high-yield bioconjugation production simultaneously through strategic planning and chromatographic purification. Mastered and adapted workflow in 2-weeks and trained 2 fellow interns. Increased production by ~75% through collaboration with supervisors and staff.",
+      icon: <FaFlask className="w-5 h-5" />,
+      color: "bg-[var(--brightest)]",
+      url: ""
+    },
+    {
+      type: "work",
+      title: "Musical Producer and Manager",
+      institution: "AHS Performing Arts Center | Lafayette, CA",
+      period: "January 2018 - March 2020",
+      details: "Coordinated with 12+ local businesses to gather funds and increase promotion for annual musicals. Managed rehearsal scheduling for cast members and staff for each 4-month production. Maintained online resources and documentation for 70+ cast members and staff.",
+      icon: <FaBriefcase className="w-5 h-5" />,
+      color: "bg-[var(--accent)]",
       url: ""
     }
   ];
