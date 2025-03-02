@@ -1,8 +1,24 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaFilePdf, FaLink, FaExternalLinkAlt, FaCode, FaFlask, FaBook } from 'react-icons/fa';
+import { FaFilePdf, FaLink, FaExternalLinkAlt, FaBook } from 'react-icons/fa';
 import { useState } from 'react';
+import React from 'react';
+
+// Define the type for paper items
+interface PaperItem {
+  title: string;
+  description: string;
+  authors: string;
+  journal: string;
+  year: string;
+  type: string;
+  category: string;
+  status: string;
+  url: string;
+  pdf: string;
+  icon: React.ReactNode;
+}
 
 const ProjectsPapers = () => {
   const [activeTab, setActiveTab] = useState('all');
@@ -16,65 +32,31 @@ const ProjectsPapers = () => {
     }
   };
 
-  const items = [
+  const items: PaperItem[] = [
     {
-      title: "Metagenomic Analysis of Soil Microbial Communities",
-      description: "Conducted comprehensive metagenomic analysis of soil samples from California agricultural systems, revealing novel insights into microbial diversity and functional potential.",
-      authors: "Monica Wang, Johnson A.B., Williams C.D.",
-      journal: "Soil Biology and Biochemistry",
-      year: "2024",
+      title: "Forensic Analysis of Plant DNA for Species Identification",
+      description: "Conducted forensic analysis using plant DNA to identify species in environmental samples, applying molecular techniques and bioinformatics tools to solve ecological questions.",
+      authors: "Monica Wang",
+      journal: "PLANTBI 185 Forensic Project",
+      year: "2023",
       type: "paper",
       category: "Research Paper",
-      status: "In Press",
-      url: "#",
-      pdf: "#",
+      status: "Completed",
+      url: "",
+      pdf: "/papers/PLANTBI 185 Forensic Project .pdf",
       icon: <FaBook className="w-5 h-5" />
     },
     {
-      title: "Microbial Biofilm Analysis Tool",
-      description: "Developed a computational tool for analyzing microbial biofilm structures using image processing algorithms and machine learning techniques.",
-      technologies: ["Python", "TensorFlow", "OpenCV"],
-      year: "2023",
-      type: "project",
-      category: "Software Tool",
-      github: "#",
-      demo: "#",
-      icon: <FaCode className="w-5 h-5" />
-    },
-    {
-      title: "Antibiotic Resistance Genes in Urban Waterways",
-      description: "Characterized antibiotic resistance genes in bacterial isolates from urban waterways using molecular techniques and bioinformatics analysis.",
-      authors: "Smith R.J., Monica Wang, Davis E.F.",
-      journal: "Journal of Antimicrobial Chemotherapy",
+      title: "Environmental Policy Analysis: Microbial Applications in Sustainable Agriculture",
+      description: "Analyzed environmental policies related to microbial applications in sustainable agriculture, evaluating their effectiveness and proposing improvements based on current scientific evidence.",
+      authors: "Monica Wang",
+      journal: "ESPM 186 Final Paper",
       year: "2023",
       type: "paper",
-      category: "Research Paper",
-      status: "Published",
-      url: "https://doi.org/10.XXXX/example",
-      pdf: "#",
-      icon: <FaBook className="w-5 h-5" />
-    },
-    {
-      title: "Biodegradable Plastic Prototype",
-      description: "Designed and tested a biodegradable plastic prototype using bacterial cellulose and plant-derived polymers.",
-      technologies: ["Material Science", "Bacterial Cultivation", "Polymer Chemistry"],
-      year: "2023",
-      type: "project",
-      category: "Laboratory Project",
-      report: "#",
-      icon: <FaFlask className="w-5 h-5" />
-    },
-    {
-      title: "Comparative Genomics of Plastic-Degrading Bacteria",
-      description: "Analyzed genomic sequences of plastic-degrading bacteria isolated from marine environments to identify key enzymes involved in plastic degradation.",
-      authors: "Monica Wang, Wilson G.H.",
-      journal: "Marine Pollution Bulletin",
-      year: "2022",
-      type: "paper",
-      category: "Research Paper",
-      status: "Published",
-      url: "https://doi.org/10.XXXX/example",
-      pdf: "#",
+      category: "Policy Analysis",
+      status: "Completed",
+      url: "",
+      pdf: "/papers/ESPM 186 Final Paper - Monica Wang.docx",
       icon: <FaBook className="w-5 h-5" />
     }
   ];
@@ -101,7 +83,7 @@ const ProjectsPapers = () => {
           </h2>
           <div className="w-24 h-1 bg-[var(--secondary)] mx-auto rounded-full mb-6"></div>
           <p className="max-w-3xl mx-auto text-[var(--text-color)] text-lg">
-            Research contributions and projects showcasing my work in microbial biology and biotechnology
+            Research papers and academic projects showcasing my work in microbial biology
           </p>
         </motion.div>
 
@@ -117,16 +99,6 @@ const ProjectsPapers = () => {
               }`}
             >
               All
-            </button>
-            <button 
-              onClick={() => setActiveTab('project')}
-              className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
-                activeTab === 'project' 
-                  ? 'bg-white text-[var(--secondary)] shadow-sm' 
-                  : 'text-gray-600 hover:text-[var(--secondary)]'
-              }`}
-            >
-              Projects
             </button>
             <button 
               onClick={() => setActiveTab('paper')}
@@ -153,11 +125,7 @@ const ProjectsPapers = () => {
             >
               <div className="flex items-start gap-4">
                 <div className="pt-1 flex-shrink-0">
-                  <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full text-white ${
-                    item.type === "paper" 
-                      ? "bg-[var(--secondary)]" 
-                      : "bg-[var(--accent)]"
-                  }`}>
+                  <span className="inline-flex items-center justify-center w-10 h-10 rounded-full text-white bg-[var(--secondary)]">
                     {item.icon}
                   </span>
                 </div>
@@ -171,32 +139,10 @@ const ProjectsPapers = () => {
                   
                   <p className="text-[var(--text-color)] mb-3">{item.description}</p>
                   
-                  {item.type === 'paper' && (
-                    <>
-                      <p className="text-[var(--text-color)] mb-1"><strong>Authors:</strong> {item.authors}</p>
-                      <p className="text-[var(--text-color)] mb-3">
-                        <strong>{item.journal}</strong>, {item.year} | <span className="font-medium text-[var(--accent)]">{item.status}</span>
-                      </p>
-                    </>
-                  )}
-                  
-                  {item.type === 'project' && (
-                    <>
-                      <div className="mb-3">
-                        <strong className="text-[var(--text-color)]">Technologies:</strong>
-                        <div className="flex flex-wrap gap-2 mt-1">
-                          {item.technologies && item.technologies.map((tech, i) => (
-                            <span key={i} className="text-xs bg-gray-100 text-[var(--text-color)] px-2 py-1 rounded">
-                              {tech}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                      <p className="text-[var(--text-color)] mb-3">
-                        <strong>Year:</strong> {item.year}
-                      </p>
-                    </>
-                  )}
+                  <p className="text-[var(--text-color)] mb-1"><strong>Authors:</strong> {item.authors}</p>
+                  <p className="text-[var(--text-color)] mb-3">
+                    <strong>{item.journal}</strong>, {item.year} | <span className="font-medium text-[var(--accent)]">{item.status}</span>
+                  </p>
                   
                   <div className="mt-3 flex flex-wrap gap-3">
                     {item.url && (
@@ -216,37 +162,7 @@ const ProjectsPapers = () => {
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-sm text-[var(--secondary)] hover:underline"
                       >
-                        <FaFilePdf className="mr-1" /> PDF <FaExternalLinkAlt size={12} className="ml-1" />
-                      </a>
-                    )}
-                    {item.github && (
-                      <a 
-                        href={item.github} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-sm text-[var(--secondary)] hover:underline"
-                      >
-                        <FaCode className="mr-1" /> GitHub <FaExternalLinkAlt size={12} className="ml-1" />
-                      </a>
-                    )}
-                    {item.demo && (
-                      <a 
-                        href={item.demo} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-sm text-[var(--secondary)] hover:underline"
-                      >
-                        <FaExternalLinkAlt className="mr-1" /> Live Demo
-                      </a>
-                    )}
-                    {item.report && (
-                      <a 
-                        href={item.report} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center text-sm text-[var(--secondary)] hover:underline"
-                      >
-                        <FaFilePdf className="mr-1" /> Project Report <FaExternalLinkAlt size={12} className="ml-1" />
+                        <FaFilePdf className="mr-1" /> View Document <FaExternalLinkAlt size={12} className="ml-1" />
                       </a>
                     )}
                   </div>
