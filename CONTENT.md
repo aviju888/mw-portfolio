@@ -25,23 +25,47 @@ This document contains all the content for Monica Wang's portfolio website. Belo
 ### Undergraduate Researcher
 - **Organization:** Niyogi Lab, PMB, UC Berkeley
 - **Period:** August 2022 - May 2024
-- **Description:** Conducted research in the Plant and Microbial Biology department, focused on developing laboratory techniques and contributing to ongoing research projects.
+- **Description:** Conducted research in the Plant and Microbial Biology department, focused on developing laboratory techniques and contributing to ongoing research projects primarily on increasing photosynthesis.
 - **Key Responsibilities:**
-  1. Learned and acquired new lab techniques by researching, reading scientific papers, and collaborating with senior scientists
-  2. Maintained clear and timely communication with supervisor via email, phone, and in-person
-  3. Ensured data integrity and replicability through meticulous recording of data and procedures
-  4. Developed concise and informative presentations and written reports to effectively convey research findings to lab team
+Maintained transgenic algae culture lines in liquid and agar plates chambers by preparing solutions and plates, autoclaving labware, streaking 10s of plates within 3hrs
+Conducted independent experiments from algae transformation to protein expression analysis via western blot, progressing research findings and understandings
+Optimized experimental conditions and protocols with guidance from supervisor to improve data collection and reproducibility of growth culture in different light/nutrient conditions and protein expressions levels 
+Reviewed scientific paper and closely collaborated with senior scientists to contribute new ideas and experiments related to the research 
+Ensured data accuracy and replicability through meticulous and organized recording of data and procedures
+Compiled and interpreted data to create figures using multiple software applications, improving experimental procedure efficiency and result consistency 
+Developed concise, informative presentations and reports to effectively exchange research findings to lab team
+
+## Teaching Experience
+### Computer Science Academic Intern
+- **Organization:** CS10, Introductory Computer Science Course, UC Berkeley
+- **Period:** June 2021 - May 2022
+- **Description:** 
+- **Key Responsibilities:**
+Mentored 20+ students in 4hr coding lab section, providing guidance on assignments and over 15+ projects
+Expertly taught Python code and troubleshooted coding issues students faced, effectively helping students achieve understanding and completion of coding assignments and projects
+Diligently attended and participated in weekly hour meetings to improve teaching style and equip myself with the skills to teach and address potential problems faced during lab section
+
+### Biology Lab Intern
+- **Organization:** Bio1AL, General Biology Laboratory Course, UC Berkeley
+- **Period:** Jan 2022 - May 2022
+- **Description:** 
+- **Key Responsibilities:**
+Arranged and assisted lab experiments for 25+ students for 3hr weekly lab section, successfully helping students achieve understanding and completion of lab assignments
+Performed student's lab assignment accurately in half the allotted time, 1.5hrs, through time management and professional, scientific techniques
+Facilitated exam logistics and test-taking environments for 100+ students, creating an efficient testing space
 
 ## Leadership Experience
-### Tech Team Leader
+### Tech Team Leader Executive
 - **Organization:** KOSMOS, UC Berkeley
 - **Period:** May 2023 - July 2024
 - **Description:** Led the technical team for KOSMOS, managing filming schedules, video editing, and equipment logistics for a large organization.
 - **Key Responsibilities:**
-  1. Orchestrated seamless collaboration and coordination with 40+ individuals managing filming schedules and video production
-  2. Streamlined organizational efficiency by centralizing and maintaining a comprehensive digital archive
-  3. Fostered tech team skill development by designing workshops covering editing, photoshop, and filming techniques
-  4. Recruited club members for Tech Team through digital content and outreach, increasing member numbers by over 400%
+Orchestrated seamless collaboration and coordination with 120+ individuals, adeptly managing filming schedules, video editing timelines, equipment logistics, and ensuring cohesive execution of projects
+Designed, organized, and managed multiple documents, Google sheets, etc. to implement a functioning work system for team and accurate documentation and accessibility of all photage-related content 
+Streamlined organizational efficiency by centralizing and maintaining a comprehensive digital archive
+Fostered tech team skill development by designing workshops covering editing, photoshop, and filming techniques
+Recruited club members for Tech Team through digital content and outreach, increasing member numbers by over 400%
+Communicated frequently with all sectors of the organization to maintain efficient workflow and collaboration
 
 ### Director Intern
 - **Organization:** Glamity, UC Berkeley
@@ -53,6 +77,16 @@ This document contains all the content for Monica Wang's portfolio website. Belo
   3. Organized and maintained digital archive for members to easily access team logistics
   4. Collaborated with director and other interns during weekly meetings to ensure seamless progress
 
+### Musical Producer and Manager
+- **Organization:** AHS Performing Arts Center | Lafayette, CA
+- **Period:** January 2018 - March 2020
+- **Description:**
+- **Key Responsibilities:**
+Coordinated with 12+ local businesses to gather funds and increase promotion to produce annual musicals within a 2-month timeframe
+Managed rehearsal scheduling for cast members, directors, coaches, costume designers and choreographers for each 4-month production, successfully achieving a professional, high-quality musical performance 
+Maintained online resources, scheduling, documentation, etc for 70+ cast members and staff 
+Utilized Google Suite practices to assemble the musical program with all details and advertisements
+
 ## Education
 - **Degree:** Bachelor of Science in Microbial Biology
 - **Institution:** University of California, Berkeley
@@ -63,28 +97,44 @@ This document contains all the content for Monica Wang's portfolio website. Belo
 
 ## Skills
 ### Laboratory Techniques
-- PCR & qPCR Methods
-- ELISA & Immunoassays
-- Gel Electrophoresis
-- Western Blotting
-- Cell Culture
-- Flow Cytometry
-- Bioconjugation
-- Protein Purification
+- qPCR
+- gel electrophoresis
+- western blot
+- SDS-PAGE
+- BF/DF/PC/PL+fluorescent microscopy
+- cell culture
+- cell count
+- dilutions
+- DNA/RNA/protein purification
+- hemocytometer
+- bacterial transformation
+- electroporation
+- IVT mRNA
+- centrifugation
+- spectrophotometer
+- MS/SEC/HIC/column chromatography
+- autoclave
+- plate streaking
+- sequencing
+- micropipette
+- pH meter
 
 ### Technical Skills
 - Python
 - R Programming
-- MATLAB
-- Data Analysis
-- Statistical Methods
-- Bioinformatics
+- Java
+- MAFFT
+- PhyML
+- Google Suite 
+- Microsoft excel 
+- Adobe acrobat
 - Adobe Creative Suite
 - Laboratory Software
 
 ### Teaching & Communication
 - Scientific Writing
-- Research Presentations
+- Research Presentations 
+- Research Posters
 - Classroom Instruction
 - One-on-One Mentoring
 - Technical Reporting
@@ -93,54 +143,33 @@ This document contains all the content for Monica Wang's portfolio website. Belo
 - Documentation
 
 ## Projects & Papers
-### Research Papers
-1. **Title:** Metagenomic Analysis of Soil Microbial Communities
-   - **Authors:** Monica Wang, Johnson A.B., Williams C.D.
-   - **Journal:** Soil Biology and Biochemistry
-   - **Year:** 2024
-   - **Status:** In Press
-   - **URL:** #
-   - **Description:** Conducted comprehensive metagenomic analysis of soil samples from California agricultural systems, revealing novel insights into microbial diversity and functional potential.
-
-2. **Title:** Antibiotic Resistance Genes in Urban Waterways
-   - **Authors:** Smith R.J., Monica Wang, Davis E.F.
-   - **Journal:** Journal of Antimicrobial Chemotherapy
+### Papers
+1. **Title:** Identifying Unknown Components in Powder Sample Using Microscopy Techniques
+   - **Authors:** Monica Wang
+   - **Journal/Course:** PLANTBI 185 Forensic Project
    - **Year:** 2023
-   - **Status:** Published
-   - **URL:** https://doi.org/10.XXXX/example
-   - **Description:** Characterized antibiotic resistance genes in bacterial isolates from urban waterways using molecular techniques and bioinformatics analysis.
+   - **Status:** Completed
+   - **Description:** Applied various microscopy techniques including brightfield, polarized light, phase contrast, and epifluorescence microscopy to identify three unknown components (cellulose, cotton fibers, and yeast) in a forensic powder sample, demonstrating practical applications of microscopy in forensic analysis.
+   - **File:** /papers/PLANTBI 185 Forensic Project .pdf
 
-3. **Title:** Comparative Genomics of Plastic-Degrading Bacteria
-   - **Authors:** Monica Wang, Wilson G.H.
-   - **Journal:** Marine Pollution Bulletin
+2. **Title:** Chancellor and Koshland Pastures' 3-year Management Plan Proposal
+   - **Authors:** Monica Wang
+   - **Journal/Course:** ESPM 186 Final Paper
    - **Year:** 2022
-   - **Status:** Published
-   - **URL:** https://doi.org/10.XXXX/example
-   - **Description:** Analyzed genomic sequences of plastic-degrading bacteria isolated from marine environments to identify key enzymes involved in plastic degradation.
-
-### Projects
-1. **Title:** Microbial Biofilm Analysis Tool
-   - **Technologies:** Python, TensorFlow, OpenCV
-   - **Year:** 2023
-   - **Description:** Developed a computational tool for analyzing microbial biofilm structures using image processing algorithms and machine learning techniques.
-   - **Links:** GitHub: #, Demo: #
-
-2. **Title:** Biodegradable Plastic Prototype
-   - **Technologies:** Material Science, Bacterial Cultivation, Polymer Chemistry
-   - **Year:** 2023
-   - **Description:** Designed and tested a biodegradable plastic prototype using bacterial cellulose and plant-derived polymers.
-   - **Links:** Report: #
+   - **Status:** Completed
+   - **Description:** Developed a comprehensive 3-year rangeland management plan for UC Berkeley campus pastures, integrating strategic grazing and burning prescriptions to control invasive species, reduce fire hazards, and create educational opportunities for students while maintaining ecological health.
+   - **File:** /papers/ESPM 186 Final Paper - Monica Wang.docx
 
 ## Contact Preferences
-- **Preferred Contact Method:** Email
-- **Available For:** Job opportunities, Research collaboration, Internships
-- **Response Time:** Within 48 hours
+- **Preferred Contact Method:** Email (moniwang9242@gmail.com)
+- **Available for Opportunities:** Yes, actively seeking full-time positions in microbiology, bioconjugation, and research
+- **Expected Response Time:** Within 24-48 hours
 
 ## Additional Information
 - **Languages:** English (Native), Mandarin Chinese (Conversational)
-- **Interests:** Sustainable biotechnology, Environmental microbiology, Dance
+- **Personal Interests:** Dance, hiking, cooking, reading scientific literature
 - **Availability:** Available for full-time positions starting June 2024
 
 ---
 
-*Last Updated: May 2024* 
+Last Updated: May 2024
