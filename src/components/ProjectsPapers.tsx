@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaFilePdf, FaLink, FaExternalLinkAlt, FaBook, FaFlask, FaUsers, FaDna, FaMicroscope, FaLeaf } from 'react-icons/fa';
+import { FaFilePdf, FaLink, FaExternalLinkAlt, FaFlask, FaDna, FaMicroscope, FaLeaf } from 'react-icons/fa';
 import { useState } from 'react';
 import React from 'react';
 import Image from 'next/image';
