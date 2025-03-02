@@ -1,7 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaLinkedin } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhone, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 const Contact = () => {
   const fadeIn = {
@@ -54,7 +55,7 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="flex items-start">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--secondary)] to-[var(--accent)] text-white flex items-center justify-center shadow-sm mr-4">
-                    <FaEnvelope size={20} />
+                    <MdEmail size={22} />
                   </div>
                   <div>
                     <h4 className="font-semibold text-[var(--heading-color)] mb-1">Email</h4>
