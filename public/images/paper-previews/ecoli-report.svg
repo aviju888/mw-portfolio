@@ -2,39 +2,38 @@
   <rect width="280" height="360" fill="white" />
   
   <!-- Header -->
-  <line x1="20" y1="40" x2="260" y2="40" stroke="#eee" stroke-width="1" />
-  <text x="20" y="30" font-family="Times New Roman, serif" font-size="8" fill="#999">General Microbiology Laboratory</text>
-  <text x="260" y="30" font-family="Times New Roman, serif" font-size="8" fill="#999" text-anchor="end">UC Berkeley, 2023</text>
+  <text x="20" y="20" font-family="Arial, sans-serif" font-size="8" fill="#666">General Microbiology Laboratory</text>
+  <text x="260" y="20" font-family="Arial, sans-serif" font-size="8" fill="#666" text-anchor="end">UC Berkeley, 2023</text>
   
   <!-- Title -->
-  <text x="140" y="65" font-family="Times New Roman, serif" font-size="14" font-weight="bold" fill="black" text-anchor="middle">E. coli Physiology: Regulation of</text>
-  <text x="140" y="85" font-family="Times New Roman, serif" font-size="14" font-weight="bold" fill="black" text-anchor="middle">Glucose and Galactose Metabolism</text>
+  <text x="140" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="black" text-anchor="middle">E. coli Physiology Lab Report:</text>
+  <text x="140" y="80" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="black" text-anchor="middle">Regulation of Glucose and Galactose Metabolism</text>
   
   <!-- Authors -->
-  <text x="140" y="110" font-family="Times New Roman, serif" font-size="12" fill="black" text-anchor="middle" font-style="italic">Monica Wang and Barbie Peters</text>
+  <text x="140" y="105" font-family="Arial, sans-serif" font-size="11" fill="#333" text-anchor="middle" font-style="italic">Monica Wang and Barbie Peters</text>
   
   <!-- Abstract -->
-  <text x="140" y="135" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="black" text-anchor="middle">Abstract</text>
+  <text x="20" y="135" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="black">Abstract</text>
   <foreignObject x="20" y="145" width="240" height="80">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Times New Roman', serif; font-size: 10px; text-align: justify; line-height: 1.4;">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, sans-serif; font-size: 9px; text-align: justify; line-height: 1.4; color: #333;">
       This study investigated the roles of galR, galS, and galK in regulating galactose metabolism in E. coli. Growth curves and Biolog assays demonstrated that galR and galK are essential for proper galactose utilization, while galS appears non-essential.
     </div>
   </foreignObject>
   
   <!-- Introduction -->
-  <text x="20" y="235" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="black">Introduction</text>
-  <foreignObject x="20" y="245" width="240" height="60">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Times New Roman', serif; font-size: 10px; text-align: justify; line-height: 1.4;">
-      Escherichia coli is a model organism for studying bacterial metabolism and gene regulation. The galactose operon in E. coli is a classic example of gene regulation, where the expression of genes involved in galactose metabolism is controlled by regulatory proteins...
+  <text x="20" y="215" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="black">Introduction</text>
+  <foreignObject x="20" y="225" width="240" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, sans-serif; font-size: 9px; text-align: justify; line-height: 1.4; color: #333;">
+      Escherichia coli is a model organism for studying bacterial metabolism and gene regulation. The galactose operon in E. coli is a classic example of gene regulation, where the expression of genes involved in galactose metabolism is controlled by multiple regulatory proteins.
     </div>
   </foreignObject>
   
   <!-- Figure -->
-  <rect x="70" y="270" width="140" height="60" fill="#f9f9f9" stroke="#eee" stroke-width="1" />
-  <text x="140" y="305" font-family="sans-serif" font-size="20" fill="#ccc" text-anchor="middle">🦠</text>
-  <text x="140" y="340" font-family="Times New Roman, serif" font-size="8" fill="black" text-anchor="middle">Figure 1: Growth curves of wild-type and mutant E. coli strains</text>
+  <rect x="70" y="290" width="140" height="40" fill="#f8f8f8" stroke="#eee" stroke-width="1" />
+  <text x="140" y="315" font-family="Arial, sans-serif" font-size="18" fill="#aaa" text-anchor="middle">🧫</text>
+  <text x="140" y="340" font-family="Arial, sans-serif" font-size="7" fill="#666" text-anchor="middle">Figure 1: Growth curves of E. coli strains on galactose medium</text>
   
-  <!-- Page number and watermark -->
-  <text x="140" y="350" font-family="Times New Roman, serif" font-size="10" fill="#999" text-anchor="middle">1</text>
-  <text x="250" y="350" font-family="Times New Roman, serif" font-size="10" fill="#999" text-anchor="end">UC Berkeley</text>
+  <!-- Page number -->
+  <text x="260" y="350" font-family="Arial, sans-serif" font-size="8" fill="#666" text-anchor="end">UC Berkeley</text>
+  <text x="20" y="350" font-family="Arial, sans-serif" font-size="8" fill="#666">1</text>
 </svg> 

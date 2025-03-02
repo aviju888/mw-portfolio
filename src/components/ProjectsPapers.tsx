@@ -233,16 +233,17 @@ const ProjectsPapers = () => {
                       </div>
                       
                       {/* Paper preview thumbnail on the right */}
-                      <div className="flex-shrink-0 w-32 h-44 md:w-48 md:h-64 shadow-lg rounded-md overflow-hidden border border-gray-200 transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl mx-auto md:mx-0">
+                      <div className="flex-shrink-0 w-32 h-44 md:w-48 md:h-64 shadow-md rounded-md overflow-hidden border border-gray-200 transition-all duration-300 group-hover:shadow-lg mx-auto md:mx-0">
                         <a href={item.pdf} target="_blank" rel="noopener noreferrer" className="block relative w-full h-full group/preview">
                           <div className="relative w-full h-full">
                             <Image 
                               src={item.thumbnail} 
                               alt={`Preview of ${item.title}`} 
                               fill
-                              className="object-cover"
+                              className="object-contain"
+                              priority
                             />
-                            <div className="absolute inset-0 bg-transparent group-hover/preview:bg-[var(--secondary)]/30 transition-all duration-300"></div>
+                            <div className="absolute inset-0 bg-transparent group-hover/preview:bg-[var(--secondary)]/20 transition-all duration-300"></div>
                           </div>
                         </a>
                       </div>

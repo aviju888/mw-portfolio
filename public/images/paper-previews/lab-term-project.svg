@@ -2,39 +2,38 @@
   <rect width="280" height="360" fill="white" />
   
   <!-- Header -->
-  <line x1="20" y1="40" x2="260" y2="40" stroke="#eee" stroke-width="1" />
-  <text x="20" y="30" font-family="Times New Roman, serif" font-size="8" fill="#999">Biology of Algae Laboratory</text>
-  <text x="260" y="30" font-family="Times New Roman, serif" font-size="8" fill="#999" text-anchor="end">UC Berkeley, 2024</text>
+  <text x="20" y="20" font-family="Arial, sans-serif" font-size="8" fill="#666">Biology of Algae Laboratory</text>
+  <text x="260" y="20" font-family="Arial, sans-serif" font-size="8" fill="#666" text-anchor="end">UC Berkeley, 2024</text>
   
   <!-- Title -->
-  <text x="140" y="70" font-family="Times New Roman, serif" font-size="14" font-weight="bold" fill="black" text-anchor="middle">Gene Knockout Analysis in</text>
-  <text x="140" y="90" font-family="Times New Roman, serif" font-size="14" font-weight="bold" fill="black" text-anchor="middle">Nannochloropsis oceanica</text>
+  <text x="140" y="60" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="black" text-anchor="middle">Gene Knockout Analysis in</text>
+  <text x="140" y="80" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="black" text-anchor="middle">Nannochloropsis oceanica</text>
   
   <!-- Authors -->
-  <text x="140" y="115" font-family="Times New Roman, serif" font-size="12" fill="black" text-anchor="middle" font-style="italic">Monica Wang</text>
+  <text x="140" y="105" font-family="Arial, sans-serif" font-size="11" fill="#333" text-anchor="middle" font-style="italic">Monica Wang</text>
   
   <!-- Abstract -->
-  <text x="140" y="145" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="black" text-anchor="middle">Abstract</text>
-  <foreignObject x="20" y="155" width="240" height="80">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Times New Roman', serif; font-size: 10px; text-align: justify; line-height: 1.4;">
+  <text x="20" y="135" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="black">Abstract</text>
+  <foreignObject x="20" y="145" width="240" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, sans-serif; font-size: 9px; text-align: justify; line-height: 1.4; color: #333;">
       This study examined the effects of CRISPR-induced knockouts of algaenan biosynthesis genes (PRX and COPOX) in Nannochloropsis oceanica. Despite contamination issues with wild-type strains, the project provided insights into gene function and algaenan formation.
     </div>
   </foreignObject>
   
   <!-- Introduction -->
-  <text x="20" y="245" font-family="Times New Roman, serif" font-size="12" font-weight="bold" fill="black">Introduction</text>
-  <foreignObject x="20" y="255" width="240" height="60">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: 'Times New Roman', serif; font-size: 10px; text-align: justify; line-height: 1.4;">
-      Nannochloropsis oceanica is a marine microalga with significant potential for biofuel production due to its high lipid content. The cell wall of N. oceanica contains algaenan, a biopolymer that contributes to its recalcitrance to extraction processes...
+  <text x="20" y="215" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="black">Introduction</text>
+  <foreignObject x="20" y="225" width="240" height="80">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial, sans-serif; font-size: 9px; text-align: justify; line-height: 1.4; color: #333;">
+      Nannochloropsis oceanica is a marine microalga with significant potential for biofuel production due to its high lipid content. The cell wall of N. oceanica contains algaenan, a biopolymer that contributes to its recalcitrance to extraction processes. This study aimed to investigate the role of PRX and COPOX genes in algaenan biosynthesis.
     </div>
   </foreignObject>
   
   <!-- Figure -->
-  <rect x="70" y="270" width="140" height="60" fill="#f9f9f9" stroke="#eee" stroke-width="1" />
-  <text x="140" y="305" font-family="sans-serif" font-size="20" fill="#ccc" text-anchor="middle">🧬</text>
-  <text x="140" y="340" font-family="Times New Roman, serif" font-size="8" fill="black" text-anchor="middle">Figure 1: CRISPR-Cas9 targeting of PRX and COPOX genes in N. oceanica</text>
+  <rect x="70" y="290" width="140" height="40" fill="#f8f8f8" stroke="#eee" stroke-width="1" />
+  <text x="140" y="315" font-family="Arial, sans-serif" font-size="18" fill="#aaa" text-anchor="middle">🧬</text>
+  <text x="140" y="340" font-family="Arial, sans-serif" font-size="7" fill="#666" text-anchor="middle">Figure 1: CRISPR-Cas9 targeting of PRX and COPOX genes in N. oceanica</text>
   
-  <!-- Page number and watermark -->
-  <text x="140" y="350" font-family="Times New Roman, serif" font-size="10" fill="#999" text-anchor="middle">1</text>
-  <text x="250" y="350" font-family="Times New Roman, serif" font-size="10" fill="#999" text-anchor="end">UC Berkeley</text>
+  <!-- Page number -->
+  <text x="260" y="350" font-family="Arial, sans-serif" font-size="8" fill="#666" text-anchor="end">UC Berkeley</text>
+  <text x="20" y="350" font-family="Arial, sans-serif" font-size="8" fill="#666">1</text>
 </svg> 
