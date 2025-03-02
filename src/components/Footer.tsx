@@ -1,6 +1,6 @@
 'use client';
 
-import { FaLinkedin, FaGithub, FaGoogle } from 'react-icons/fa';
+import { FaLinkedin, FaGoogle } from 'react-icons/fa';
 import Link from 'next/link';
 
 const Footer = () => {

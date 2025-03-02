@@ -4,10 +4,7 @@ import { motion } from 'framer-motion';
 import { 
   FaFlask, 
   FaCode, 
-  FaMicroscope, 
-  FaChalkboardTeacher, 
-  FaUsers, 
-  FaFileAlt 
+  FaChalkboardTeacher 
 } from 'react-icons/fa';
 
 const Skills = () => {
