@@ -21,7 +21,7 @@ const Education = () => {
   const experiences = [
     {
       type: "education",
-      title: "Bachelor of Science",
+      title: "B.S. Microbial Biology",
       institution: "University of California, Berkeley",
       period: "2020-2024",
       details: "Bachelor of Science in Microbial Biology with a 3.814 GPA. Specializing in multidisciplinary courses in chemistry, physics, and biology, as well as coding applications in bioengineering.",
@@ -36,6 +36,24 @@ const Education = () => {
       details: "Conducted research on algal photosynthesis, developed laboratory protocols, and assisted in data collection and analysis for various projects.",
       icon: <FaFlask className="w-5 h-5" />,
       color: "bg-[var(--accent)]"
+    },
+    {
+      type: "work",
+      title: "Computer Science Academic Intern",
+      institution: "CS10, UC Berkeley",
+      period: "June 2021 - May 2022",
+      details: "Mentored 20+ students in 4hr coding lab sections, providing guidance on assignments and projects. Taught Python programming and troubleshooted coding issues, helping students achieve understanding and completion of assignments.",
+      icon: <FaChalkboardTeacher className="w-5 h-5" />,
+      color: "bg-[var(--brightest)]"
+    },
+    {
+      type: "work",
+      title: "Biology Lab Intern",
+      institution: "Bio1AL, UC Berkeley",
+      period: "January 2022 - May 2022",
+      details: "Arranged and assisted lab experiments for 25+ students in weekly 3hr lab sections. Performed lab assignments accurately in half the allotted time through efficient time management and professional scientific techniques.",
+      icon: <FaFlask className="w-5 h-5" />,
+      color: "bg-[var(--highlight)]"
     },
     {
       type: "work",
