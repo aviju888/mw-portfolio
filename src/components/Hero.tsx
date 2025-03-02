@@ -5,7 +5,7 @@ import { FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden flex items-center bg-white dark:bg-gray-900">
+    <section className="relative min-h-screen w-full overflow-hidden flex items-center bg-white">
       {/* White background with subtle decorative elements */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--secondary)] opacity-5 rounded-full"></div>
       <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-[var(--highlight)] opacity-5 rounded-full"></div>
@@ -19,7 +19,7 @@ const Hero = () => {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="flex flex-col max-w-xl w-full"
           >
-            <div className="inline-flex px-3 py-1.5 mb-5 bg-[var(--secondary)]/10 dark:bg-[var(--secondary)]/20 rounded-full shadow-sm self-start">
+            <div className="inline-flex px-3 py-1.5 mb-5 bg-[var(--secondary)]/10 rounded-full shadow-sm self-start">
               <span className="text-[var(--secondary)] font-semibold text-sm">Microbial Biology Graduate</span>
             </div>
             
@@ -28,7 +28,7 @@ const Hero = () => {
               <span className="text-3xl sm:text-4xl font-medium text-[var(--secondary)]">UC Berkeley</span>
             </h1>
             
-            <p className="text-lg text-[var(--text-color)] mb-8 bg-gray-50 dark:bg-gray-800/40 p-4 rounded-lg border border-gray-100 dark:border-gray-700">
+            <p className="text-lg text-[var(--text-color)] mb-8 bg-gray-50 p-4 rounded-lg border border-gray-100">
               With my fast-learning and proactive character, drive to exceed baseline expectations, and 2+ years of experience in bioconjugation and research, I am a valuable candidate ready to make an impact.
             </p>
             
