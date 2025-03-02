@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaFilePdf, FaLink, FaExternalLinkAlt, FaBook, FaFlask, FaUsers } from 'react-icons/fa';
+import { FaFilePdf, FaLink, FaExternalLinkAlt, FaBook, FaFlask, FaUsers, FaDna, FaMicroscope, FaLeaf } from 'react-icons/fa';
 import { useState } from 'react';
 import React from 'react';
 
@@ -34,11 +34,50 @@ const ProjectsPapers = () => {
 
   const items: PaperItem[] = [
     {
-      title: "Laboratory Term Project: E. coli Physiology Analysis",
-      description: "Conducted comprehensive physiological analysis of E. coli strains under various growth conditions, examining metabolic pathways, growth kinetics, and cellular responses to environmental stressors. Employed microbiological techniques including spectrophotometry, enzyme assays, and growth curve analysis.",
-      authors: "Monica Wang",
-      journal: "Laboratory Term Project Report",
+      title: "134L Final Report: Global Circulation Patterns of Influenza A Virulence Gene Mutations",
+      description: "Analyzed global mutation patterns in the HA and NA genes of Influenza A H3N2 to assess co‐evolution and evolutionary rates. Employed multiple sequence alignment, phylogenetic tree construction, and statistical analysis (ANCOVA) to compare temporal versus regional mutation trends.",
+      authors: "Mari Torii-Karch, Monica Wang, and Anna Kroskrity",
+      journal: "Practical Genomics IB 134L Report, UC Berkeley",
       year: "2023",
+      type: "paper",
+      category: "Research Paper",
+      status: "Completed",
+      url: "",
+      pdf: "/papers/134L Final Report - Mari, Anna, Monica.pdf",
+      icon: <FaDna className="w-5 h-5" />
+    },
+    {
+      title: "E. coli Physiology Lab Report: Regulation of Glucose and Galactose Metabolism",
+      description: "Investigated the roles of galR, galS, and galK in regulating galactose metabolism in E. coli. Growth curves and Biolog assays demonstrated that galR and galK are essential for proper galactose utilization, while galS appears non-essential.",
+      authors: "Monica Wang and Barbie Peters",
+      journal: "General Microbiology Laboratory Report, UC Berkeley",
+      year: "2023",
+      type: "paper",
+      category: "Lab Report",
+      status: "Completed",
+      url: "",
+      pdf: "/papers/E. coli Physiology Lab Report - Monica Wang_.pdf",
+      icon: <FaFlask className="w-5 h-5" />
+    },
+    {
+      title: "ESPM 186 Final Paper: Chancellor and Koshland Pastures' 3-year Management Plan Proposal",
+      description: "Outlined a comprehensive grazing and burning management plan for the Chancellor and Koshland pastures at UC Berkeley. The proposal focused on using domestic livestock grazing to reduce invasive woody species and controlled burnings to lower fire risk.",
+      authors: "Lynn Huntsinger",
+      journal: "ESPM 186 Final Paper",
+      year: "2022",
+      type: "paper",
+      category: "Research Paper",
+      status: "Completed",
+      url: "",
+      pdf: "/papers/ESPM 186 Final Paper - Monica Wang.pdf",
+      icon: <FaLeaf className="w-5 h-5" />
+    },
+    {
+      title: "Laboratory Term Project Report: Gene Knockout Analysis in Nannochloropsis oceanica",
+      description: "Examined the effects of CRISPR-induced knockouts of algaenan biosynthesis genes (PRX and COPOX) in Nannochloropsis oceanica. Despite encountering contamination issues with wild-type strains, the project provided insights into gene function and algaenan formation.",
+      authors: "Monica Wang",
+      journal: "Biology of Algae Laboratory Report, UC Berkeley",
+      year: "2024",
       type: "paper",
       category: "Research Paper",
       status: "Completed",
@@ -47,56 +86,17 @@ const ProjectsPapers = () => {
       icon: <FaFlask className="w-5 h-5" />
     },
     {
-      title: "Microbial Analysis of Environmental Samples",
-      description: "Collaborative research project analyzing microbial communities in environmental samples using molecular techniques and culture-based methods. Investigated microbial diversity, abundance, and functional roles in ecosystem processes.",
-      authors: "Mari, Anna, Monica Wang",
-      journal: "134L Final Report",
+      title: "PLANTBI 185 Forensic Project: Identifying Unknown Powder Components Using Microscopy",
+      description: "Utilized a suite of microscopy techniques—including brightfield, polarized light, phase contrast, and epifluorescence—to determine that the unknown powder sample consisted of cellulose, cotton fibers, and yeast.",
+      authors: "Monica Wang",
+      journal: "Forensic Project Report, UC Berkeley",
       year: "2023",
       type: "paper",
-      category: "Research Paper",
-      status: "Completed",
-      url: "",
-      pdf: "/papers/134L Final Report - Mari, Anna, Monica.pdf",
-      icon: <FaUsers className="w-5 h-5" />
-    },
-    {
-      title: "E. coli Physiology: Growth and Metabolic Analysis",
-      description: "Detailed investigation of E. coli physiology focusing on growth parameters, metabolic pathways, and cellular responses to varying nutrient conditions. Applied microbiological techniques to characterize bacterial growth kinetics and metabolic activities.",
-      authors: "Monica Wang",
-      journal: "E. coli Physiology Lab Report",
-      year: "2022",
-      type: "paper",
-      category: "Research Paper",
-      status: "Completed",
-      url: "",
-      pdf: "/papers/E. coli Physiology Lab Report - Monica Wang_.pdf",
-      icon: <FaFlask className="w-5 h-5" />
-    },
-    {
-      title: "Identifying Unknown Components in Powder Sample Using Microscopy Techniques",
-      description: "Applied various microscopy techniques including brightfield, polarized light, phase contrast, and epifluorescence microscopy to identify three unknown components (cellulose, cotton fibers, and yeast) in a forensic powder sample, demonstrating practical applications of microscopy in forensic analysis.",
-      authors: "Monica Wang",
-      journal: "PLANTBI 185 Forensic Project",
-      year: "2023",
-      type: "paper",
-      category: "Research Paper",
+      category: "Project Report",
       status: "Completed",
       url: "",
       pdf: "/papers/PLANTBI 185 Forensic Project .pdf",
-      icon: <FaBook className="w-5 h-5" />
-    },
-    {
-      title: "Chancellor and Koshland Pastures' 3-year Rangeland Management Plan Proposal",
-      description: "Developed a comprehensive 3-year rangeland management plan for UC Berkeley campus pastures, integrating strategic grazing and burning prescriptions to control invasive species, reduce fire hazards, and create educational opportunities for students while maintaining ecological health.",
-      authors: "Monica Wang",
-      journal: "ESPM 186 Final Paper",
-      year: "2022",
-      type: "paper",
-      category: "Policy Analysis",
-      status: "Completed",
-      url: "",
-      pdf: "/papers/ESPM 186 Final Paper - Monica Wang.pdf",
-      icon: <FaBook className="w-5 h-5" />
+      icon: <FaMicroscope className="w-5 h-5" />
     }
   ];
 

@@ -144,45 +144,45 @@ Utilized Google Suite practices to assemble the musical program with all details
 
 ## Projects & Papers
 ### Papers
-1. **Title:** Laboratory Term Project: E. coli Physiology Analysis
-   - **Authors:** Monica Wang
-   - **Journal/Course:** Laboratory Term Project Report
+1. **Title:** 134L Final Report: Global Circulation Patterns of Influenza A Virulence Gene Mutations
+   - **Authors:** Mari Torii-Karch, Monica Wang, and Anna Kroskrity
+   - **Journal/Course:** Practical Genomics IB 134L Report, UC Berkeley
    - **Year:** 2023
    - **Status:** Completed
-   - **Description:** Conducted comprehensive physiological analysis of E. coli strains under various growth conditions, examining metabolic pathways, growth kinetics, and cellular responses to environmental stressors. Employed microbiological techniques including spectrophotometry, enzyme assays, and growth curve analysis.
-   - **File:** /papers/Laboratory Term Project Report.pdf
-
-2. **Title:** Microbial Analysis of Environmental Samples
-   - **Authors:** Mari, Anna, Monica Wang
-   - **Journal/Course:** 134L Final Report
-   - **Year:** 2023
-   - **Status:** Completed
-   - **Description:** Collaborative research project analyzing microbial communities in environmental samples using molecular techniques and culture-based methods. Investigated microbial diversity, abundance, and functional roles in ecosystem processes.
+   - **Description:** Analyzed global mutation patterns in the HA and NA genes of Influenza A H3N2 to assess co‐evolution and evolutionary rates. Employed multiple sequence alignment, phylogenetic tree construction, and statistical analysis (ANCOVA) to compare temporal versus regional mutation trends.
    - **File:** /papers/134L Final Report - Mari, Anna, Monica.pdf
 
-3. **Title:** E. coli Physiology: Growth and Metabolic Analysis
-   - **Authors:** Monica Wang
-   - **Journal/Course:** E. coli Physiology Lab Report
-   - **Year:** 2022
-   - **Status:** Completed
-   - **Description:** Detailed investigation of E. coli physiology focusing on growth parameters, metabolic pathways, and cellular responses to varying nutrient conditions. Applied microbiological techniques to characterize bacterial growth kinetics and metabolic activities.
-   - **File:** /papers/E. coli Physiology Lab Report - Monica Wang_.pdf
-
-4. **Title:** Identifying Unknown Components in Powder Sample Using Microscopy Techniques
-   - **Authors:** Monica Wang
-   - **Journal/Course:** PLANTBI 185 Forensic Project
+2. **Title:** E. coli Physiology Lab Report: Regulation of Glucose and Galactose Metabolism
+   - **Authors:** Monica Wang and Barbie Peters
+   - **Journal/Course:** General Microbiology Laboratory Report, UC Berkeley
    - **Year:** 2023
    - **Status:** Completed
-   - **Description:** Applied various microscopy techniques including brightfield, polarized light, phase contrast, and epifluorescence microscopy to identify three unknown components (cellulose, cotton fibers, and yeast) in a forensic powder sample, demonstrating practical applications of microscopy in forensic analysis.
-   - **File:** /papers/PLANTBI 185 Forensic Project .pdf
+   - **Description:** Investigated the roles of galR, galS, and galK in regulating galactose metabolism in E. coli. Growth curves and Biolog assays demonstrated that galR and galK are essential for proper galactose utilization, while galS appears non-essential.
+   - **File:** /papers/E. coli Physiology Lab Report - Monica Wang_.pdf
 
-5. **Title:** Chancellor and Koshland Pastures' 3-year Management Plan Proposal
-   - **Authors:** Monica Wang
+3. **Title:** ESPM 186 Final Paper: Chancellor and Koshland Pastures' 3-year Management Plan Proposal
+   - **Authors:** Lynn Huntsinger
    - **Journal/Course:** ESPM 186 Final Paper
    - **Year:** 2022
    - **Status:** Completed
-   - **Description:** Developed a comprehensive 3-year rangeland management plan for UC Berkeley campus pastures, integrating strategic grazing and burning prescriptions to control invasive species, reduce fire hazards, and create educational opportunities for students while maintaining ecological health.
+   - **Description:** Outlined a comprehensive grazing and burning management plan for the Chancellor and Koshland pastures at UC Berkeley. The proposal focused on using domestic livestock grazing to reduce invasive woody species and controlled burnings to lower fire risk.
    - **File:** /papers/ESPM 186 Final Paper - Monica Wang.pdf
+
+4. **Title:** Laboratory Term Project Report: Gene Knockout Analysis in Nannochloropsis oceanica
+   - **Authors:** Monica Wang
+   - **Journal/Course:** Biology of Algae Laboratory Report, UC Berkeley
+   - **Year:** 2024
+   - **Status:** Completed
+   - **Description:** Examined the effects of CRISPR-induced knockouts of algaenan biosynthesis genes (PRX and COPOX) in Nannochloropsis oceanica. Despite encountering contamination issues with wild-type strains, the project provided insights into gene function and algaenan formation.
+   - **File:** /papers/Laboratory Term Project Report.pdf
+
+5. **Title:** PLANTBI 185 Forensic Project: Identifying Unknown Powder Components Using Microscopy
+   - **Authors:** Monica Wang
+   - **Journal/Course:** Forensic Project Report, UC Berkeley
+   - **Year:** 2023
+   - **Status:** Completed
+   - **Description:** Utilized a suite of microscopy techniques—including brightfield, polarized light, phase contrast, and epifluorescence—to determine that the unknown powder sample consisted of cellulose, cotton fibers, and yeast.
+   - **File:** /papers/PLANTBI 185 Forensic Project .pdf
 
 ## Contact Preferences
 - **Preferred Contact Method:** Email (moniwang9242@gmail.com)
