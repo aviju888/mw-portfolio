@@ -15,13 +15,13 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         {/* Added max-width constraint to bring content closer together */}
         <div className="max-w-5xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-10 lg:gap-16 py-8 sm:py-16 md:py-24">
+          <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-10 lg:gap-24 py-8 sm:py-16 md:py-24">
             {/* Text content */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              className="flex flex-col w-full lg:w-1/2 order-2 lg:order-1"
+              className="flex flex-col w-full lg:w-1/2 order-2 lg:order-1 lg:pr-4"
             >
               <div className="inline-flex px-3 py-1 sm:py-1.5 mb-3 sm:mb-5 bg-[var(--secondary)]/10 rounded-full shadow-sm self-center lg:self-start">
                 {/* <span className="text-[var(--secondary)] font-semibold text-xs sm:text-sm">Microbial Biology Graduate</span> */}
@@ -61,7 +61,7 @@ const Hero = () => {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-              className="flex-shrink-0 mb-6 lg:mb-0 order-1 lg:order-2 lg:w-1/2 flex justify-center"
+              className="flex-shrink-0 mb-6 lg:mb-0 order-1 lg:order-2 lg:w-1/2 flex justify-center lg:pl-4"
             >
               <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 overflow-hidden rounded-2xl shadow-xl border-2 border-[var(--secondary)]/20">
                 {/* Profile image */}
