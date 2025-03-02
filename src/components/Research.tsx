@@ -20,6 +20,7 @@ const Research = () => {
   const researchProjects = [
     {
       title: "Undergraduate Researcher",
+      shortTitle: "Research",
       subtitle: "Niyogi Lab, PMB, UC Berkeley",
       period: "August 2022 - May 2024",
       description: "Conducted research in the Plant and Microbial Biology department, focused on developing laboratory techniques and contributing to ongoing research projects.",
@@ -35,6 +36,7 @@ const Research = () => {
     },
     {
       title: "Tech Team Leader",
+      shortTitle: "Tech",
       subtitle: "KOSMOS, UC Berkeley",
       period: "May 2023 - July 2024",
       description: "Led the technical team for KOSMOS, managing filming schedules, video editing, and equipment logistics for a large organization.",
@@ -50,6 +52,7 @@ const Research = () => {
     },
     {
       title: "Director Intern",
+      shortTitle: "Director",
       subtitle: "Glamity, UC Berkeley",
       period: "January 2024 - May 2024",
       description: "Served as a director intern for Glamity at UC Berkeley, handling organizational tasks and promotion for the dance team.",
@@ -97,18 +100,18 @@ const Research = () => {
               <Tab
                 key={index}
                 className={({ selected }) =>
-                  `w-full rounded-lg py-3 px-4 text-sm font-medium leading-5 transition-all duration-200
+                  `w-full rounded-lg py-2 sm:py-3 px-2 sm:px-4 text-xs sm:text-sm font-medium leading-5 transition-all duration-200
                   ${selected 
                     ? 'bg-white dark:bg-gray-700 text-[var(--secondary)] shadow-sm border border-[var(--secondary)]/20' 
                     : 'text-[var(--text-color)] hover:bg-white/[0.15] dark:hover:bg-gray-700/[0.3]'
                   }`
                 }
               >
-                <span className="flex items-center justify-center gap-2">
-                  <span className={`w-7 h-7 rounded-lg flex items-center justify-center text-white bg-gradient-to-br ${project.color}`}>
+                <span className="flex flex-col sm:flex-row items-center justify-center sm:gap-2">
+                  <span className={`w-6 h-6 sm:w-7 sm:h-7 rounded-lg flex items-center justify-center text-white bg-gradient-to-br ${project.color} mb-1 sm:mb-0`}>
                     {project.icon}
                   </span>
-                  <span>{project.title.split(' ')[0]}</span>
+                  <span className="text-center sm:text-left">{project.shortTitle}</span>
                 </span>
               </Tab>
             ))}
