@@ -34,8 +34,8 @@ const ProjectsPapers = () => {
 
   const items: PaperItem[] = [
     {
-      title: "Forensic Analysis of Plant DNA for Species Identification",
-      description: "Conducted forensic analysis using plant DNA to identify species in environmental samples, applying molecular techniques and bioinformatics tools to solve ecological questions.",
+      title: "Identifying Unknown Components in Powder Sample Using Microscopy Techniques",
+      description: "Applied various microscopy techniques including brightfield, polarized light, phase contrast, and epifluorescence microscopy to identify three unknown components (cellulose, cotton fibers, and yeast) in a forensic powder sample, demonstrating practical applications of microscopy in forensic analysis.",
       authors: "Monica Wang",
       journal: "PLANTBI 185 Forensic Project",
       year: "2023",
@@ -47,11 +47,11 @@ const ProjectsPapers = () => {
       icon: <FaBook className="w-5 h-5" />
     },
     {
-      title: "Environmental Policy Analysis: Microbial Applications in Sustainable Agriculture",
-      description: "Analyzed environmental policies related to microbial applications in sustainable agriculture, evaluating their effectiveness and proposing improvements based on current scientific evidence.",
+      title: "Chancellor and Koshland Pastures' 3-year Management Plan Proposal",
+      description: "Developed a comprehensive 3-year rangeland management plan for UC Berkeley campus pastures, integrating strategic grazing and burning prescriptions to control invasive species, reduce fire hazards, and create educational opportunities for students while maintaining ecological health.",
       authors: "Monica Wang",
       journal: "ESPM 186 Final Paper",
-      year: "2023",
+      year: "2022",
       type: "paper",
       category: "Policy Analysis",
       status: "Completed",
@@ -83,7 +83,7 @@ const ProjectsPapers = () => {
           </h2>
           <div className="w-24 h-1 bg-[var(--secondary)] mx-auto rounded-full mb-6"></div>
           <p className="max-w-3xl mx-auto text-[var(--text-color)] text-lg">
-            Research papers and academic projects showcasing my work in microbial biology
+            Research papers and academic projects showcasing my work in microbial biology and environmental management
           </p>
         </motion.div>
 
