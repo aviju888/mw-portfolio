@@ -171,7 +171,7 @@ const ProjectsPapers = () => {
                 <div className="flex-1">
                   <div className="flex justify-between items-start">
                     <h3 className="text-xl font-bold text-[var(--heading-color)] mb-2">{item.title}</h3>
-                    <span className="text-sm font-medium text-[var(--secondary)] bg-[var(--secondary)]/10 px-2 py-1 rounded">
+                    <span className="text-sm font-medium text-white bg-[var(--secondary)] px-3 py-1 rounded-full">
                       {item.category}
                     </span>
                   </div>
