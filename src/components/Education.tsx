@@ -157,7 +157,7 @@ const Education = () => {
             My Journey
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--heading-color)] mb-4">
-            Education & Experience
+            Education & Experiences
           </h2>
           <div className="w-24 h-1 bg-[var(--secondary)] mx-auto rounded-full mb-6"></div>
           <p className="max-w-3xl mx-auto text-[var(--text-color)] text-lg">
